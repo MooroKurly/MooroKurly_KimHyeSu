@@ -25,6 +25,10 @@
 		15E2D0F7264BCBC300EA3536 /* MyTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E2D0F6264BCBC300EA3536 /* MyTabViewController.swift */; };
 		15E2D0F9264BD3A700EA3536 /* TopLabelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E2D0F8264BD3A700EA3536 /* TopLabelCollectionViewCell.swift */; };
 		15E2D0FB264BD8FE00EA3536 /* TopLabelDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E2D0FA264BD8FE00EA3536 /* TopLabelDataModel.swift */; };
+		15E2D10F264E93E900EA3536 /* FirstImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E2D10E264E93E900EA3536 /* FirstImageCollectionViewCell.swift */; };
+		15E2D113264E9D2500EA3536 /* EventImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E2D112264E9D2500EA3536 /* EventImageTableViewCell.swift */; };
+		15E2D115264EDB0D00EA3536 /* FirstImageListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E2D114264EDB0D00EA3536 /* FirstImageListDataModel.swift */; };
+		15E2D119264F1FA500EA3536 /* ImageTableCellDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E2D118264F1FA500EA3536 /* ImageTableCellDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +52,10 @@
 		15E2D0F6264BCBC300EA3536 /* MyTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabViewController.swift; sourceTree = "<group>"; };
 		15E2D0F8264BD3A700EA3536 /* TopLabelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLabelCollectionViewCell.swift; sourceTree = "<group>"; };
 		15E2D0FA264BD8FE00EA3536 /* TopLabelDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLabelDataModel.swift; sourceTree = "<group>"; };
+		15E2D10E264E93E900EA3536 /* FirstImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		15E2D112264E9D2500EA3536 /* EventImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventImageTableViewCell.swift; sourceTree = "<group>"; };
+		15E2D114264EDB0D00EA3536 /* FirstImageListDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstImageListDataModel.swift; sourceTree = "<group>"; };
+		15E2D118264F1FA500EA3536 /* ImageTableCellDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableCellDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,27 +88,95 @@
 		15E2D0BA264A650800EA3536 /* Curly */ = {
 			isa = PBXGroup;
 			children = (
+				15E2D10C264E93C900EA3536 /* HomeTab */,
+				15E2D11D264F34DD00EA3536 /* RecommendTab */,
+				15E2D11C264F34C900EA3536 /* CategoryTab */,
+				15E2D11B264F34BC00EA3536 /* MyTab */,
+				15E2D11F264F34F300EA3536 /* SearchTab */,
 				15E2D0BB264A650800EA3536 /* AppDelegate.swift */,
 				15E2D0BD264A650800EA3536 /* SceneDelegate.swift */,
 				15E2D0BF264A650800EA3536 /* ViewController.swift */,
 				15E2D0C1264A650800EA3536 /* Main.storyboard */,
-				15E2D0D3264A6FE200EA3536 /* Recommend.storyboard */,
-				15E2D0DB264A701800EA3536 /* RecommendViewController.swift */,
-				15E2D0D5264A6FEA00EA3536 /* Category.storyboard */,
-				15E2D0F2264BCB2800EA3536 /* CategoryViewController.swift */,
-				15E2D0D7264A6FF200EA3536 /* Search.storyboard */,
-				15E2D0F4264BCB8A00EA3536 /* SearchViewController.swift */,
-				15E2D0D9264A6FFB00EA3536 /* MyTab.storyboard */,
-				15E2D0F6264BCBC300EA3536 /* MyTabViewController.swift */,
-				15E2D0CF264A6DC800EA3536 /* Home.storyboard */,
-				15E2D0FA264BD8FE00EA3536 /* TopLabelDataModel.swift */,
-				15E2D0F8264BD3A700EA3536 /* TopLabelCollectionViewCell.swift */,
-				15E2D0D1264A6E1800EA3536 /* HomeViewController.swift */,
 				15E2D0C4264A650A00EA3536 /* Assets.xcassets */,
 				15E2D0C6264A650A00EA3536 /* LaunchScreen.storyboard */,
 				15E2D0C9264A650A00EA3536 /* Info.plist */,
 			);
 			path = Curly;
+			sourceTree = "<group>";
+		};
+		15E2D10C264E93C900EA3536 /* HomeTab */ = {
+			isa = PBXGroup;
+			children = (
+				15E2D0CF264A6DC800EA3536 /* Home.storyboard */,
+				15E2D0D1264A6E1800EA3536 /* HomeViewController.swift */,
+				15E2D11A264F2FB500EA3536 /* TopLabel */,
+				15E2D10D264E93D700EA3536 /* Cell1 */,
+			);
+			path = HomeTab;
+			sourceTree = "<group>";
+		};
+		15E2D10D264E93D700EA3536 /* Cell1 */ = {
+			isa = PBXGroup;
+			children = (
+				15E2D118264F1FA500EA3536 /* ImageTableCellDataModel.swift */,
+				15E2D112264E9D2500EA3536 /* EventImageTableViewCell.swift */,
+				15E2D120264F352400EA3536 /* Cell1-Collection */,
+			);
+			path = Cell1;
+			sourceTree = "<group>";
+		};
+		15E2D11A264F2FB500EA3536 /* TopLabel */ = {
+			isa = PBXGroup;
+			children = (
+				15E2D0FA264BD8FE00EA3536 /* TopLabelDataModel.swift */,
+				15E2D0F8264BD3A700EA3536 /* TopLabelCollectionViewCell.swift */,
+			);
+			path = TopLabel;
+			sourceTree = "<group>";
+		};
+		15E2D11B264F34BC00EA3536 /* MyTab */ = {
+			isa = PBXGroup;
+			children = (
+				15E2D0D9264A6FFB00EA3536 /* MyTab.storyboard */,
+				15E2D0F6264BCBC300EA3536 /* MyTabViewController.swift */,
+			);
+			path = MyTab;
+			sourceTree = "<group>";
+		};
+		15E2D11C264F34C900EA3536 /* CategoryTab */ = {
+			isa = PBXGroup;
+			children = (
+				15E2D0D5264A6FEA00EA3536 /* Category.storyboard */,
+				15E2D0F2264BCB2800EA3536 /* CategoryViewController.swift */,
+			);
+			path = CategoryTab;
+			sourceTree = "<group>";
+		};
+		15E2D11D264F34DD00EA3536 /* RecommendTab */ = {
+			isa = PBXGroup;
+			children = (
+				15E2D0D3264A6FE200EA3536 /* Recommend.storyboard */,
+				15E2D0DB264A701800EA3536 /* RecommendViewController.swift */,
+			);
+			path = RecommendTab;
+			sourceTree = "<group>";
+		};
+		15E2D11F264F34F300EA3536 /* SearchTab */ = {
+			isa = PBXGroup;
+			children = (
+				15E2D0D7264A6FF200EA3536 /* Search.storyboard */,
+				15E2D0F4264BCB8A00EA3536 /* SearchViewController.swift */,
+			);
+			path = SearchTab;
+			sourceTree = "<group>";
+		};
+		15E2D120264F352400EA3536 /* Cell1-Collection */ = {
+			isa = PBXGroup;
+			children = (
+				15E2D114264EDB0D00EA3536 /* FirstImageListDataModel.swift */,
+				15E2D10E264E93E900EA3536 /* FirstImageCollectionViewCell.swift */,
+			);
+			path = "Cell1-Collection";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,12 +258,16 @@
 				15E2D0F7264BCBC300EA3536 /* MyTabViewController.swift in Sources */,
 				15E2D0C0264A650800EA3536 /* ViewController.swift in Sources */,
 				15E2D0F5264BCB8A00EA3536 /* SearchViewController.swift in Sources */,
+				15E2D10F264E93E900EA3536 /* FirstImageCollectionViewCell.swift in Sources */,
 				15E2D0BC264A650800EA3536 /* AppDelegate.swift in Sources */,
 				15E2D0FB264BD8FE00EA3536 /* TopLabelDataModel.swift in Sources */,
 				15E2D0BE264A650800EA3536 /* SceneDelegate.swift in Sources */,
+				15E2D115264EDB0D00EA3536 /* FirstImageListDataModel.swift in Sources */,
 				15E2D0F9264BD3A700EA3536 /* TopLabelCollectionViewCell.swift in Sources */,
 				15E2D0D2264A6E1800EA3536 /* HomeViewController.swift in Sources */,
 				15E2D0F3264BCB2800EA3536 /* CategoryViewController.swift in Sources */,
+				15E2D113264E9D2500EA3536 /* EventImageTableViewCell.swift in Sources */,
+				15E2D119264F1FA500EA3536 /* ImageTableCellDataModel.swift in Sources */,
 				15E2D0DC264A701800EA3536 /* RecommendViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,7 +344,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -318,7 +398,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
