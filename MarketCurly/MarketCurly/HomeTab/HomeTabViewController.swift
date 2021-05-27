@@ -111,8 +111,21 @@ extension HomeTabViewController : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
+        switch indexPath.section {
+        case 0:
+            return UIScreen.main.bounds.width * (338/375)
+        case 1:
+            // 여기 크기 + 내부 컬렉션 뷰 cell 부분 높이 맞도록고치기
+            return UIScreen.main.bounds.height * (419/812)
+            
+            //return 419
+        default:
+            return 500
+        }
         
-        return UIScreen.main.bounds.width * (338/375)
+        
+        
+        // 여기 분기처리..
         
     }
     

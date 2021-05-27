@@ -73,7 +73,7 @@ extension HomeProductTVC : UICollectionViewDelegateFlowLayout {
         print(UIScreen.main.bounds.width)
         
         let cellWidth = UIScreen.main.bounds.width * (150/375)
-        let cellHeight = cellWidth * (338/375)
+        let cellHeight = cellWidth * (338/150)
         
         return CGSize(width: cellWidth , height: cellHeight)
     
