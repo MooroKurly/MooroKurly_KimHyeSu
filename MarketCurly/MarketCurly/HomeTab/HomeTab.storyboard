@@ -43,6 +43,113 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6c3-1Z-aqw">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="nZr-YA-JJZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="376"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MwN-xz-PRA">
+                                            <rect key="frame" x="12" y="18" width="59" height="34"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="34" id="dHt-y8-iAl"/>
+                                                <constraint firstAttribute="width" constant="59" id="op3-55-thy"/>
+                                            </constraints>
+                                            <state key="normal" image="buttonKurlyintro"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z09-Bf-iq2">
+                                            <rect key="frame" x="71" y="18" width="65" height="34"/>
+                                            <state key="normal" image="buttonTerms"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eda-px-Pqq">
+                                            <rect key="frame" x="136" y="18" width="101" height="34"/>
+                                            <state key="normal" image="buttonPrivacy"/>
+                                        </button>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TnB-Ko-R4b">
+                                            <rect key="frame" x="15" y="69" width="342" height="87"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="87" id="TtE-AA-Ar7"/>
+                                            </constraints>
+                                            <string key="text">주식회사 컬리 | 대표자 : 김슬아
+개인정보보호책임자 : 이원준
+사업자등록번호 : 261-81-23567 사업자 정보확인
+통신판매업 : 제 2018-서울강남-01646 호
+주소 : 서울특별시 강남구 도산대로 16길 20, 이래빌딩 B1 ~ 4F</string>
+                                            <color key="textColor" red="0.59607843137254901" green="0.59999999999999998" blue="0.60392156862745094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgFooter" translatesAutoresizingMaskIntoConstraints="NO" id="MrX-Ll-GEP">
+                                            <rect key="frame" x="15" y="168" width="305" height="83"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카카오톡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ap3-Hk-Csx">
+                                            <rect key="frame" x="15" y="266" width="42" height="15"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                            <color key="textColor" red="0.59607843140000005" green="0.59999999999999998" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@마켓컬리" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nd-kI-MWw">
+                                            <rect key="frame" x="60" y="266" width="53" height="15"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                            <color key="textColor" red="0.36078431372549019" green="0.011764705882352941" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ZJ-hI-RcX">
+                                            <rect key="frame" x="15" y="298" width="25" height="25"/>
+                                            <state key="normal" image="btnInsta"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PaD-k0-PpH">
+                                            <rect key="frame" x="52" y="298" width="25" height="25"/>
+                                            <state key="normal" image="btnFacebook"/>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 친구 추가하고 소식과 혜택을 받아보세요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x60-dp-gyg">
+                                            <rect key="frame" x="113" y="266" width="197" height="15"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                            <color key="textColor" red="0.59607843140000005" green="0.59999999999999998" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAM-i5-HhL">
+                                            <rect key="frame" x="89" y="298" width="25" height="25"/>
+                                            <state key="normal" image="btnBlog"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMs-q0-9Db">
+                                            <rect key="frame" x="126" y="298" width="25" height="25"/>
+                                            <state key="normal" image="btnNaver"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ib4-sm-l5M">
+                                            <rect key="frame" x="163" y="298" width="25" height="25"/>
+                                            <state key="normal" image="btnYoutube"/>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.96470588235294119" green="0.96862745098039216" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="HAM-i5-HhL" firstAttribute="centerY" secondItem="PaD-k0-PpH" secondAttribute="centerY" id="5AM-7E-xsy"/>
+                                        <constraint firstItem="Z09-Bf-iq2" firstAttribute="centerY" secondItem="MwN-xz-PRA" secondAttribute="centerY" id="8jk-NU-GUN"/>
+                                        <constraint firstItem="PaD-k0-PpH" firstAttribute="centerY" secondItem="2ZJ-hI-RcX" secondAttribute="centerY" id="CT1-QT-ccu"/>
+                                        <constraint firstItem="x60-dp-gyg" firstAttribute="centerY" secondItem="6nd-kI-MWw" secondAttribute="centerY" id="Giy-KE-U7D"/>
+                                        <constraint firstItem="Ib4-sm-l5M" firstAttribute="centerY" secondItem="vMs-q0-9Db" secondAttribute="centerY" id="LOk-t8-St2"/>
+                                        <constraint firstItem="eda-px-Pqq" firstAttribute="centerY" secondItem="Z09-Bf-iq2" secondAttribute="centerY" id="O7e-zM-1aY"/>
+                                        <constraint firstItem="MrX-Ll-GEP" firstAttribute="top" secondItem="TnB-Ko-R4b" secondAttribute="bottom" constant="12" id="OOr-dF-geP"/>
+                                        <constraint firstAttribute="trailing" secondItem="TnB-Ko-R4b" secondAttribute="trailing" constant="57" id="S1y-PG-Azu"/>
+                                        <constraint firstItem="2ZJ-hI-RcX" firstAttribute="top" secondItem="ap3-Hk-Csx" secondAttribute="bottom" constant="17" id="TSG-VO-8sO"/>
+                                        <constraint firstItem="x60-dp-gyg" firstAttribute="leading" secondItem="6nd-kI-MWw" secondAttribute="trailing" id="UvZ-6R-Dp8"/>
+                                        <constraint firstItem="vMs-q0-9Db" firstAttribute="leading" secondItem="HAM-i5-HhL" secondAttribute="trailing" constant="12" id="Z68-xk-ke7"/>
+                                        <constraint firstItem="MwN-xz-PRA" firstAttribute="leading" secondItem="nZr-YA-JJZ" secondAttribute="leading" constant="12" id="Zn9-uV-o55"/>
+                                        <constraint firstItem="HAM-i5-HhL" firstAttribute="leading" secondItem="PaD-k0-PpH" secondAttribute="trailing" constant="12" id="aPt-0U-b1S"/>
+                                        <constraint firstItem="2ZJ-hI-RcX" firstAttribute="leading" secondItem="nZr-YA-JJZ" secondAttribute="leading" constant="15" id="bwQ-fW-jKB"/>
+                                        <constraint firstItem="ap3-Hk-Csx" firstAttribute="top" secondItem="MrX-Ll-GEP" secondAttribute="bottom" constant="15" id="cga-pG-Xnb"/>
+                                        <constraint firstItem="6nd-kI-MWw" firstAttribute="centerY" secondItem="ap3-Hk-Csx" secondAttribute="centerY" id="eLz-VJ-S6e"/>
+                                        <constraint firstItem="PaD-k0-PpH" firstAttribute="leading" secondItem="2ZJ-hI-RcX" secondAttribute="trailing" constant="12" id="fE2-Oz-Jhd"/>
+                                        <constraint firstItem="vMs-q0-9Db" firstAttribute="centerY" secondItem="HAM-i5-HhL" secondAttribute="centerY" id="khk-0a-RG3"/>
+                                        <constraint firstItem="MrX-Ll-GEP" firstAttribute="leading" secondItem="nZr-YA-JJZ" secondAttribute="leading" constant="15" id="lsF-vu-W8O"/>
+                                        <constraint firstItem="TnB-Ko-R4b" firstAttribute="top" secondItem="MwN-xz-PRA" secondAttribute="bottom" constant="17" id="oad-3h-uMS"/>
+                                        <constraint firstItem="ap3-Hk-Csx" firstAttribute="leading" secondItem="nZr-YA-JJZ" secondAttribute="leading" constant="15" id="psb-kG-Uqq"/>
+                                        <constraint firstItem="TnB-Ko-R4b" firstAttribute="leading" secondItem="nZr-YA-JJZ" secondAttribute="leading" constant="15" id="ptc-j0-kpT"/>
+                                        <constraint firstItem="eda-px-Pqq" firstAttribute="leading" secondItem="Z09-Bf-iq2" secondAttribute="trailing" id="qzP-Qc-FrF"/>
+                                        <constraint firstItem="6nd-kI-MWw" firstAttribute="leading" secondItem="ap3-Hk-Csx" secondAttribute="trailing" constant="3" id="rbK-wO-s0m"/>
+                                        <constraint firstItem="MwN-xz-PRA" firstAttribute="top" secondItem="nZr-YA-JJZ" secondAttribute="top" constant="18" id="tw2-Af-qoF"/>
+                                        <constraint firstItem="Z09-Bf-iq2" firstAttribute="leading" secondItem="MwN-xz-PRA" secondAttribute="trailing" id="u7C-Mx-T3g"/>
+                                        <constraint firstItem="Ib4-sm-l5M" firstAttribute="leading" secondItem="vMs-q0-9Db" secondAttribute="trailing" constant="12" id="uVK-c5-tqH"/>
+                                    </constraints>
+                                </view>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -60,6 +167,7 @@
                     <tabBarItem key="tabBarItem" title="홈" image="house" catalog="system" id="eZt-16-MHM"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="homeTableFooterView" destination="nZr-YA-JJZ" id="aSG-7o-EKV"/>
                         <outlet property="homeTableView" destination="6c3-1Z-aqw" id="yCC-EW-Ygh"/>
                     </connections>
                 </viewController>
@@ -69,8 +177,17 @@
         </scene>
     </scenes>
     <resources>
+        <image name="btnBlog" width="25" height="25"/>
+        <image name="btnFacebook" width="25" height="25"/>
+        <image name="btnInsta" width="25" height="25"/>
+        <image name="btnNaver" width="25" height="25"/>
+        <image name="btnYoutube" width="25" height="25"/>
         <image name="btn_cart" width="27.5" height="23"/>
+        <image name="buttonKurlyintro" width="59" height="34"/>
+        <image name="buttonPrivacy" width="101" height="34"/>
+        <image name="buttonTerms" width="65" height="34"/>
         <image name="house" catalog="system" width="128" height="106"/>
+        <image name="imgFooter" width="305" height="83"/>
         <image name="img_logo" width="63" height="36.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

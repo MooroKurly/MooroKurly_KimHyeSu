@@ -16,6 +16,7 @@ class HomeTabViewController: UIViewController {
     var saleList : [HomeSaleDataModel] = []
     
     @IBOutlet weak var homeTableView: UITableView!
+    @IBOutlet weak var homeTableFooterView: UIView!
     
     
     override func viewDidLoad() {
@@ -26,6 +27,8 @@ class HomeTabViewController: UIViewController {
         homeTableView.dataSource = self
         homeTableView.allowsSelection = false
         //homeTableView.separatorStyle = .none
+        
+        homeTableView.tableFooterView = homeTableFooterView
         
         // Do any additional setup after loading the view.
     }
