@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeSaleTVC" rowHeight="413" id="KGk-i7-Jjw" customClass="HomeSaleTVC" customModule="MarketCurly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="491" height="413"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="491" height="413"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeY-VQ-1NS">
+                        <rect key="frame" x="16" y="38" width="46" height="22"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="yHj-rD-KUN">
+                        <rect key="frame" x="0.0" y="99" width="491" height="314"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dvz-DG-yFd">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fF-gG-Nfu">
+                        <rect key="frame" x="16" y="66" width="36" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yHj-rD-KUN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="OK1-KJ-iIK"/>
+                    <constraint firstItem="1fF-gG-Nfu" firstAttribute="top" secondItem="jeY-VQ-1NS" secondAttribute="bottom" constant="6" id="PrD-29-jFS"/>
+                    <constraint firstAttribute="bottom" secondItem="yHj-rD-KUN" secondAttribute="bottom" id="Zbe-bX-5xv"/>
+                    <constraint firstItem="jeY-VQ-1NS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="38" id="as9-dq-mfD"/>
+                    <constraint firstItem="1fF-gG-Nfu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="dqL-XP-VLO"/>
+                    <constraint firstItem="jeY-VQ-1NS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="g0I-xf-Rgt"/>
+                    <constraint firstItem="yHj-rD-KUN" firstAttribute="top" secondItem="1fF-gG-Nfu" secondAttribute="bottom" constant="16" id="hiN-vc-pYE"/>
+                    <constraint firstAttribute="trailing" secondItem="yHj-rD-KUN" secondAttribute="trailing" id="ocg-st-NQZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collectionView" destination="yHj-rD-KUN" id="d7C-wo-T1B"/>
+                <outlet property="subtitleLabel" destination="1fF-gG-Nfu" id="VJf-E2-aIg"/>
+                <outlet property="titleLabel" destination="jeY-VQ-1NS" id="gL1-n6-a0f"/>
+            </connections>
+            <point key="canvasLocation" x="255.79710144927537" y="178.45982142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

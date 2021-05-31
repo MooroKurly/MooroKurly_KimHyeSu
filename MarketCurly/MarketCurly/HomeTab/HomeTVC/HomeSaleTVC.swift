@@ -1,27 +1,28 @@
 //
-//  HomeProductTVC.swift
+//  HomeSaleTVC.swift
 //  MarketCurly
 //
-//  Created by 김혜수 on 2021/05/27.
+//  Created by 김혜수 on 2021/05/31.
 //
 
 import UIKit
 
-class HomeProductTVC: UITableViewCell {
+class HomeSaleTVC: UITableViewCell {
+/* 일일특가 TVC */
     
-    public static let identifier = "HomeProductTVC"
+    public static let identifier = "HomeSaleTVC"
     
-    private var product : [Product] = []
+    private var dailySale : [DailySale] = []
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var subtitleLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        registerXib()
         // Initialization code
+        registerXib()
         collectionView.delegate = self
         collectionView.dataSource = self
-        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -31,35 +32,41 @@ class HomeProductTVC: UITableViewCell {
     }
     
     static func nib() -> UINib{
-       return UINib(nibName: "HomeProductTVC", bundle: nil)
+       return UINib(nibName: "HomeSaleTVC", bundle: nil)
     }
+    
     func registerXib(){
-        let nib = UINib(nibName: HomeProductCVC.identifier, bundle: nil)
-        collectionView.register(nib, forCellWithReuseIdentifier: HomeProductCVC.identifier)
+        let nib = UINib(nibName: HomeSaleCVC.identifier, bundle: nil)
+        collectionView.register(nib, forCellWithReuseIdentifier: HomeSaleCVC.identifier)
     }
     
-    func setData(productList: HomeProductDataModel){
-        titleLabel.text = productList.title
-        product = productList.product
-        
+    func setData(saleModel : HomeSaleDataModel){
+        titleLabel.text = saleModel.title
+        subtitleLabel.text = saleModel.subtitle
+        dailySale = saleModel.dailySale
     }
+    
+    
+    
     
 }
 
-extension HomeProductTVC : UICollectionViewDelegate {
+extension HomeSaleTVC : UICollectionViewDelegate {
     
 }
 
-extension HomeProductTVC : UICollectionViewDataSource {
+extension HomeSaleTVC : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        product.count
+        return dailySale.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeProductCVC.identifier, for: indexPath) as? HomeProductCVC else {
+        
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeSaleCVC.identifier, for: indexPath) as? HomeSaleCVC else {
             return UICollectionViewCell()
         }
-        cell.setData(image: product[indexPath.row].productImage, productName: product[indexPath.row].productName, productSale: product[indexPath.row].productSale, productPrice: product[indexPath.row].productPrice)
+        
+        cell.setData(image: dailySale[indexPath.row].dailySaleImage, title: dailySale[indexPath.row].dailySaleTitle, salePercent: dailySale[indexPath.row].dailySalePercent, price: dailySale[indexPath.row].dailySalePrice, time: dailySale[indexPath.row].dailyTime)
         
         return cell
     }
@@ -67,22 +74,15 @@ extension HomeProductTVC : UICollectionViewDataSource {
     
 }
 
-extension HomeProductTVC : UICollectionViewDelegateFlowLayout {
+extension HomeSaleTVC : UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        print(UIScreen.main.bounds.width)
-        
-        let cellWidth = UIScreen.main.bounds.width * (150/375)
-        let cellHeight = cellWidth * (338/150)
-        
-        return CGSize(width: cellWidth , height: cellHeight)
-    
+        return CGSize(width: 375, height: 250)
     }
     
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 0)
+        return UIEdgeInsets.zero
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {

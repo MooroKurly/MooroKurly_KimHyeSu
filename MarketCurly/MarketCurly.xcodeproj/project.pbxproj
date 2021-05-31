@@ -17,6 +17,11 @@
 		1585FB32265EEA2F00C9858D /* HomeProductCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1585FB30265EEA2F00C9858D /* HomeProductCVC.swift */; };
 		1585FB33265EEA2F00C9858D /* HomeProductCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1585FB31265EEA2F00C9858D /* HomeProductCVC.xib */; };
 		1585FB35265FE18D00C9858D /* HomeProductDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1585FB34265FE18D00C9858D /* HomeProductDataModel.swift */; };
+		1585FBA82663FEC500C9858D /* HomeSaleTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1585FBA62663FEC500C9858D /* HomeSaleTVC.swift */; };
+		1585FBA92663FEC500C9858D /* HomeSaleTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1585FBA72663FEC500C9858D /* HomeSaleTVC.xib */; };
+		1585FBAC2663FF7D00C9858D /* HomeSaleCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1585FBAA2663FF7D00C9858D /* HomeSaleCVC.swift */; };
+		1585FBAD2663FF7D00C9858D /* HomeSaleCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1585FBAB2663FF7D00C9858D /* HomeSaleCVC.xib */; };
+		1585FBAF26651AAC00C9858D /* HomeSaleDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1585FBAE26651AAC00C9858D /* HomeSaleDataModel.swift */; };
 		15E94F5026564E9600154B73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E94F4F26564E9600154B73 /* AppDelegate.swift */; };
 		15E94F5226564E9600154B73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E94F5126564E9600154B73 /* SceneDelegate.swift */; };
 		15E94F5426564E9600154B73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E94F5326564E9600154B73 /* ViewController.swift */; };
@@ -65,6 +70,11 @@
 		1585FB30265EEA2F00C9858D /* HomeProductCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProductCVC.swift; sourceTree = "<group>"; };
 		1585FB31265EEA2F00C9858D /* HomeProductCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeProductCVC.xib; sourceTree = "<group>"; };
 		1585FB34265FE18D00C9858D /* HomeProductDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProductDataModel.swift; sourceTree = "<group>"; };
+		1585FBA62663FEC500C9858D /* HomeSaleTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSaleTVC.swift; sourceTree = "<group>"; };
+		1585FBA72663FEC500C9858D /* HomeSaleTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeSaleTVC.xib; sourceTree = "<group>"; };
+		1585FBAA2663FF7D00C9858D /* HomeSaleCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSaleCVC.swift; sourceTree = "<group>"; };
+		1585FBAB2663FF7D00C9858D /* HomeSaleCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeSaleCVC.xib; sourceTree = "<group>"; };
+		1585FBAE26651AAC00C9858D /* HomeSaleDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSaleDataModel.swift; sourceTree = "<group>"; };
 		15E94F4C26564E9600154B73 /* MarketCurly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketCurly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15E94F4F26564E9600154B73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15E94F5126564E9600154B73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +133,8 @@
 				1585FB21265A7D1E00C9858D /* HomeEventCVC.swift */,
 				1585FB2C265EEA0D00C9858D /* HomeProductTVC.swift */,
 				1585FB30265EEA2F00C9858D /* HomeProductCVC.swift */,
+				1585FBA62663FEC500C9858D /* HomeSaleTVC.swift */,
+				1585FBAA2663FF7D00C9858D /* HomeSaleCVC.swift */,
 				1585FB1E265A6EB100C9858D /* HomeXib */,
 			);
 			path = HomeTVC;
@@ -135,6 +147,8 @@
 				1585FB22265A7D1E00C9858D /* HomeEventCVC.xib */,
 				1585FB2D265EEA0D00C9858D /* HomeProductTVC.xib */,
 				1585FB31265EEA2F00C9858D /* HomeProductCVC.xib */,
+				1585FBA72663FEC500C9858D /* HomeSaleTVC.xib */,
+				1585FBAB2663FF7D00C9858D /* HomeSaleCVC.xib */,
 			);
 			path = HomeXib;
 			sourceTree = "<group>";
@@ -144,6 +158,7 @@
 			children = (
 				1585FB25265A824D00C9858D /* HomeEventDataModel.swift */,
 				1585FB34265FE18D00C9858D /* HomeProductDataModel.swift */,
+				1585FBAE26651AAC00C9858D /* HomeSaleDataModel.swift */,
 			);
 			path = HomeDataModel;
 			sourceTree = "<group>";
@@ -365,7 +380,9 @@
 				1585FB2A265C185000C9858D /* HomeEventTVC.xib in Resources */,
 				1585FB24265A7D1E00C9858D /* HomeEventCVC.xib in Resources */,
 				1585FB33265EEA2F00C9858D /* HomeProductCVC.xib in Resources */,
+				1585FBA92663FEC500C9858D /* HomeSaleTVC.xib in Resources */,
 				15E94F5726564E9600154B73 /* Main.storyboard in Resources */,
+				1585FBAD2663FF7D00C9858D /* HomeSaleCVC.xib in Resources */,
 				1585FB2F265EEA0D00C9858D /* HomeProductTVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,13 +410,16 @@
 			files = (
 				15E94F9E265657E400154B73 /* MyTabViewController.swift in Sources */,
 				1585FB32265EEA2F00C9858D /* HomeProductCVC.swift in Sources */,
+				1585FBA82663FEC500C9858D /* HomeSaleTVC.swift in Sources */,
 				1585FB29265C185000C9858D /* HomeEventTVC.swift in Sources */,
 				1585FB2E265EEA0D00C9858D /* HomeProductTVC.swift in Sources */,
 				1585FB35265FE18D00C9858D /* HomeProductDataModel.swift in Sources */,
+				1585FBAC2663FF7D00C9858D /* HomeSaleCVC.swift in Sources */,
 				15E94F9A265657D500154B73 /* RecommendTabViewController.swift in Sources */,
 				1585FB26265A824D00C9858D /* HomeEventDataModel.swift in Sources */,
 				15E94F5426564E9600154B73 /* ViewController.swift in Sources */,
 				15E94F98265657CC00154B73 /* CategoryTabViewController.swift in Sources */,
+				1585FBAF26651AAC00C9858D /* HomeSaleDataModel.swift in Sources */,
 				1585FB23265A7D1E00C9858D /* HomeEventCVC.swift in Sources */,
 				15E94F96265657BE00154B73 /* HomeTabViewController.swift in Sources */,
 				15E94F5026564E9600154B73 /* AppDelegate.swift in Sources */,
