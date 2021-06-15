@@ -54,6 +54,7 @@ extension HomeEventTVC : UICollectionViewDataSource {
         
         cell.setData(image: imageList[indexPath.row].eventImageName)
         
+        
         return cell
         
     }

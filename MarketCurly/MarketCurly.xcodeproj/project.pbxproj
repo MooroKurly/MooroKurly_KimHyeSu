@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -40,6 +40,21 @@
 		15E94F9A265657D500154B73 /* RecommendTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E94F99265657D500154B73 /* RecommendTabViewController.swift */; };
 		15E94F9C265657DD00154B73 /* SearchTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E94F9B265657DD00154B73 /* SearchTabViewController.swift */; };
 		15E94F9E265657E400154B73 /* MyTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E94F9D265657E400154B73 /* MyTabViewController.swift */; };
+		15F8AC5E266D3BDA00E211A4 /* CategoryRepeatTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F8AC5C266D3BD900E211A4 /* CategoryRepeatTVC.swift */; };
+		15F8AC5F266D3BDA00E211A4 /* CategoryRepeatTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15F8AC5D266D3BDA00E211A4 /* CategoryRepeatTVC.xib */; };
+		15F8AC902673364300E211A4 /* CategoryExpyTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F8AC8E2673364300E211A4 /* CategoryExpyTVC.swift */; };
+		15F8AC912673364300E211A4 /* CategoryExpyTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15F8AC8F2673364300E211A4 /* CategoryExpyTVC.xib */; };
+		15F8ACC52678836500E211A4 /* HomeCustomTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15F8ACC42678836500E211A4 /* HomeCustomTab.storyboard */; };
+		15F8ACC82678847000E211A4 /* HomeTitleLabelCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F8ACC62678847000E211A4 /* HomeTitleLabelCVC.swift */; };
+		15F8ACC92678847000E211A4 /* HomeTitleLabelCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15F8ACC72678847000E211A4 /* HomeTitleLabelCVC.xib */; };
+		15F8ACCB2678897300E211A4 /* HomeCustomTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F8ACCA2678897300E211A4 /* HomeCustomTabVC.swift */; };
+		15F8ACCD2678ABCF00E211A4 /* HomeNewProduct.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15F8ACCC2678ABCF00E211A4 /* HomeNewProduct.storyboard */; };
+		15F8ACCF2678ABFA00E211A4 /* HomeBest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15F8ACCE2678ABFA00E211A4 /* HomeBest.storyboard */; };
+		15F8ACD12678AC6D00E211A4 /* HomeSaleShopping.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15F8ACD02678AC6D00E211A4 /* HomeSaleShopping.storyboard */; };
+		15F8ACD32678AC9900E211A4 /* HomeBenefit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15F8ACD22678AC9900E211A4 /* HomeBenefit.storyboard */; };
+		326015C3CCC5D850179BE835 /* Pods_MarketCurly_MarketCurlyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B25332C519D5092A053E32A /* Pods_MarketCurly_MarketCurlyUITests.framework */; };
+		47A31FABB789FAA06AA479F7 /* Pods_MarketCurly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F853E910CAB9C18B13CBE818 /* Pods_MarketCurly.framework */; };
+		DB115CF5095AD9B3E6E76347 /* Pods_MarketCurlyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E26E7118BDA21394AF99FDF0 /* Pods_MarketCurlyTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +114,27 @@
 		15E94F99265657D500154B73 /* RecommendTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendTabViewController.swift; sourceTree = "<group>"; };
 		15E94F9B265657DD00154B73 /* SearchTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTabViewController.swift; sourceTree = "<group>"; };
 		15E94F9D265657E400154B73 /* MyTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabViewController.swift; sourceTree = "<group>"; };
+		15F8AC5C266D3BD900E211A4 /* CategoryRepeatTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepeatTVC.swift; sourceTree = "<group>"; };
+		15F8AC5D266D3BDA00E211A4 /* CategoryRepeatTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryRepeatTVC.xib; sourceTree = "<group>"; };
+		15F8AC8E2673364300E211A4 /* CategoryExpyTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryExpyTVC.swift; sourceTree = "<group>"; };
+		15F8AC8F2673364300E211A4 /* CategoryExpyTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryExpyTVC.xib; sourceTree = "<group>"; };
+		15F8ACC42678836500E211A4 /* HomeCustomTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeCustomTab.storyboard; sourceTree = "<group>"; };
+		15F8ACC62678847000E211A4 /* HomeTitleLabelCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTitleLabelCVC.swift; sourceTree = "<group>"; };
+		15F8ACC72678847000E211A4 /* HomeTitleLabelCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTitleLabelCVC.xib; sourceTree = "<group>"; };
+		15F8ACCA2678897300E211A4 /* HomeCustomTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCustomTabVC.swift; sourceTree = "<group>"; };
+		15F8ACCC2678ABCF00E211A4 /* HomeNewProduct.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeNewProduct.storyboard; sourceTree = "<group>"; };
+		15F8ACCE2678ABFA00E211A4 /* HomeBest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeBest.storyboard; sourceTree = "<group>"; };
+		15F8ACD02678AC6D00E211A4 /* HomeSaleShopping.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeSaleShopping.storyboard; sourceTree = "<group>"; };
+		15F8ACD22678AC9900E211A4 /* HomeBenefit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeBenefit.storyboard; sourceTree = "<group>"; };
+		68C9D5CE19D2C532D987175C /* Pods-MarketCurly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketCurly.debug.xcconfig"; path = "Target Support Files/Pods-MarketCurly/Pods-MarketCurly.debug.xcconfig"; sourceTree = "<group>"; };
+		7B25332C519D5092A053E32A /* Pods_MarketCurly_MarketCurlyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarketCurly_MarketCurlyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF23E2FE8AE7F466CA32B6C6 /* Pods-MarketCurly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketCurly.release.xcconfig"; path = "Target Support Files/Pods-MarketCurly/Pods-MarketCurly.release.xcconfig"; sourceTree = "<group>"; };
+		B531696F42B344A87D9B01C2 /* Pods-MarketCurly-MarketCurlyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketCurly-MarketCurlyUITests.debug.xcconfig"; path = "Target Support Files/Pods-MarketCurly-MarketCurlyUITests/Pods-MarketCurly-MarketCurlyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B8C081A804CB4A0CCBE1A707 /* Pods-MarketCurly-MarketCurlyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketCurly-MarketCurlyUITests.release.xcconfig"; path = "Target Support Files/Pods-MarketCurly-MarketCurlyUITests/Pods-MarketCurly-MarketCurlyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C54084F69DD255400F641D52 /* Pods-MarketCurlyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketCurlyTests.debug.xcconfig"; path = "Target Support Files/Pods-MarketCurlyTests/Pods-MarketCurlyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C576F1CF4E3BD5CF491EDE38 /* Pods-MarketCurlyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketCurlyTests.release.xcconfig"; path = "Target Support Files/Pods-MarketCurlyTests/Pods-MarketCurlyTests.release.xcconfig"; sourceTree = "<group>"; };
+		E26E7118BDA21394AF99FDF0 /* Pods_MarketCurlyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarketCurlyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F853E910CAB9C18B13CBE818 /* Pods_MarketCurly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarketCurly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47A31FABB789FAA06AA479F7 /* Pods_MarketCurly.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +150,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB115CF5095AD9B3E6E76347 /* Pods_MarketCurlyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				326015C3CCC5D850179BE835 /* Pods_MarketCurly_MarketCurlyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +168,7 @@
 		1585FB1D265A6EA600C9858D /* HomeTVC */ = {
 			isa = PBXGroup;
 			children = (
+				15F8ACC62678847000E211A4 /* HomeTitleLabelCVC.swift */,
 				1585FB27265C185000C9858D /* HomeEventTVC.swift */,
 				1585FB21265A7D1E00C9858D /* HomeEventCVC.swift */,
 				1585FB2C265EEA0D00C9858D /* HomeProductTVC.swift */,
@@ -143,6 +183,7 @@
 		1585FB1E265A6EB100C9858D /* HomeXib */ = {
 			isa = PBXGroup;
 			children = (
+				15F8ACC72678847000E211A4 /* HomeTitleLabelCVC.xib */,
 				1585FB28265C185000C9858D /* HomeEventTVC.xib */,
 				1585FB22265A7D1E00C9858D /* HomeEventCVC.xib */,
 				1585FB2D265EEA0D00C9858D /* HomeProductTVC.xib */,
@@ -170,6 +211,8 @@
 				15E94F6526564E9700154B73 /* MarketCurlyTests */,
 				15E94F7026564E9700154B73 /* MarketCurlyUITests */,
 				15E94F4D26564E9600154B73 /* Products */,
+				4566C67DF41AD44233EF4120 /* Pods */,
+				71C9704AD34FEE9BF06C2CCA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -223,6 +266,12 @@
 		15E94F7F26564EAB00154B73 /* HomeTab */ = {
 			isa = PBXGroup;
 			children = (
+				15F8ACC42678836500E211A4 /* HomeCustomTab.storyboard */,
+				15F8ACCC2678ABCF00E211A4 /* HomeNewProduct.storyboard */,
+				15F8ACCE2678ABFA00E211A4 /* HomeBest.storyboard */,
+				15F8ACD02678AC6D00E211A4 /* HomeSaleShopping.storyboard */,
+				15F8ACD22678AC9900E211A4 /* HomeBenefit.storyboard */,
+				15F8ACCA2678897300E211A4 /* HomeCustomTabVC.swift */,
 				15E94F852656505500154B73 /* HomeTab.storyboard */,
 				15E94F95265657BE00154B73 /* HomeTabViewController.swift */,
 				1585FB2B265C2B2A00C9858D /* HomeDataModel */,
@@ -245,6 +294,7 @@
 			children = (
 				15E94F8B2656508300154B73 /* CategoryTab.storyboard */,
 				15E94F97265657CC00154B73 /* CategoryTabViewController.swift */,
+				15F8AC5A266D3B8500E211A4 /* CategoryTVC */,
 			);
 			path = CategoryTab;
 			sourceTree = "<group>";
@@ -267,6 +317,48 @@
 			path = MyTab;
 			sourceTree = "<group>";
 		};
+		15F8AC5A266D3B8500E211A4 /* CategoryTVC */ = {
+			isa = PBXGroup;
+			children = (
+				15F8AC5C266D3BD900E211A4 /* CategoryRepeatTVC.swift */,
+				15F8AC8E2673364300E211A4 /* CategoryExpyTVC.swift */,
+				15F8AC5B266D3B9500E211A4 /* CategoryXib */,
+			);
+			path = CategoryTVC;
+			sourceTree = "<group>";
+		};
+		15F8AC5B266D3B9500E211A4 /* CategoryXib */ = {
+			isa = PBXGroup;
+			children = (
+				15F8AC5D266D3BDA00E211A4 /* CategoryRepeatTVC.xib */,
+				15F8AC8F2673364300E211A4 /* CategoryExpyTVC.xib */,
+			);
+			path = CategoryXib;
+			sourceTree = "<group>";
+		};
+		4566C67DF41AD44233EF4120 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68C9D5CE19D2C532D987175C /* Pods-MarketCurly.debug.xcconfig */,
+				AF23E2FE8AE7F466CA32B6C6 /* Pods-MarketCurly.release.xcconfig */,
+				B531696F42B344A87D9B01C2 /* Pods-MarketCurly-MarketCurlyUITests.debug.xcconfig */,
+				B8C081A804CB4A0CCBE1A707 /* Pods-MarketCurly-MarketCurlyUITests.release.xcconfig */,
+				C54084F69DD255400F641D52 /* Pods-MarketCurlyTests.debug.xcconfig */,
+				C576F1CF4E3BD5CF491EDE38 /* Pods-MarketCurlyTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		71C9704AD34FEE9BF06C2CCA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F853E910CAB9C18B13CBE818 /* Pods_MarketCurly.framework */,
+				7B25332C519D5092A053E32A /* Pods_MarketCurly_MarketCurlyUITests.framework */,
+				E26E7118BDA21394AF99FDF0 /* Pods_MarketCurlyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -274,9 +366,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15E94F7626564E9700154B73 /* Build configuration list for PBXNativeTarget "MarketCurly" */;
 			buildPhases = (
+				CC458DFF1A74ACD79AB14D9A /* [CP] Check Pods Manifest.lock */,
 				15E94F4826564E9600154B73 /* Sources */,
 				15E94F4926564E9600154B73 /* Frameworks */,
 				15E94F4A26564E9600154B73 /* Resources */,
+				9446035D56A59A793D57E886 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -291,6 +385,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15E94F7926564E9700154B73 /* Build configuration list for PBXNativeTarget "MarketCurlyTests" */;
 			buildPhases = (
+				F838FFC797B89F0F99ECC870 /* [CP] Check Pods Manifest.lock */,
 				15E94F5E26564E9700154B73 /* Sources */,
 				15E94F5F26564E9700154B73 /* Frameworks */,
 				15E94F6026564E9700154B73 /* Resources */,
@@ -309,9 +404,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15E94F7C26564E9700154B73 /* Build configuration list for PBXNativeTarget "MarketCurlyUITests" */;
 			buildPhases = (
+				D0CCA96BB8DF6136AE483A77 /* [CP] Check Pods Manifest.lock */,
 				15E94F6926564E9700154B73 /* Sources */,
 				15E94F6A26564E9700154B73 /* Frameworks */,
 				15E94F6B26564E9700154B73 /* Resources */,
+				44E4738714C68ADB882A0E46 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -371,19 +468,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				15E94F5C26564E9700154B73 /* LaunchScreen.storyboard in Resources */,
+				15F8ACC52678836500E211A4 /* HomeCustomTab.storyboard in Resources */,
 				15E94F862656505500154B73 /* HomeTab.storyboard in Resources */,
 				15E94F5926564E9700154B73 /* Assets.xcassets in Resources */,
+				15F8ACCD2678ABCF00E211A4 /* HomeNewProduct.storyboard in Resources */,
 				15E94F90265650C100154B73 /* SearchTab.storyboard in Resources */,
 				15E94F94265657A200154B73 /* MyTab.storyboard in Resources */,
+				15F8AC912673364300E211A4 /* CategoryExpyTVC.xib in Resources */,
 				15E94F8E2656509500154B73 /* RecommendTab.storyboard in Resources */,
+				15F8ACD12678AC6D00E211A4 /* HomeSaleShopping.storyboard in Resources */,
 				15E94F8C2656508300154B73 /* CategoryTab.storyboard in Resources */,
+				15F8ACC92678847000E211A4 /* HomeTitleLabelCVC.xib in Resources */,
 				1585FB2A265C185000C9858D /* HomeEventTVC.xib in Resources */,
+				15F8AC5F266D3BDA00E211A4 /* CategoryRepeatTVC.xib in Resources */,
+				15F8ACCF2678ABFA00E211A4 /* HomeBest.storyboard in Resources */,
 				1585FB24265A7D1E00C9858D /* HomeEventCVC.xib in Resources */,
 				1585FB33265EEA2F00C9858D /* HomeProductCVC.xib in Resources */,
 				1585FBA92663FEC500C9858D /* HomeSaleTVC.xib in Resources */,
 				15E94F5726564E9600154B73 /* Main.storyboard in Resources */,
 				1585FBAD2663FF7D00C9858D /* HomeSaleCVC.xib in Resources */,
 				1585FB2F265EEA0D00C9858D /* HomeProductTVC.xib in Resources */,
+				15F8ACD32678AC9900E211A4 /* HomeBenefit.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,15 +508,121 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		44E4738714C68ADB882A0E46 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarketCurly-MarketCurlyUITests/Pods-MarketCurly-MarketCurlyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarketCurly-MarketCurlyUITests/Pods-MarketCurly-MarketCurlyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MarketCurly-MarketCurlyUITests/Pods-MarketCurly-MarketCurlyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9446035D56A59A793D57E886 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarketCurly/Pods-MarketCurly-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarketCurly/Pods-MarketCurly-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MarketCurly/Pods-MarketCurly-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC458DFF1A74ACD79AB14D9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarketCurly-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0CCA96BB8DF6136AE483A77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarketCurly-MarketCurlyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F838FFC797B89F0F99ECC870 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarketCurlyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		15E94F4826564E9600154B73 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				15E94F9E265657E400154B73 /* MyTabViewController.swift in Sources */,
+				15F8ACC82678847000E211A4 /* HomeTitleLabelCVC.swift in Sources */,
 				1585FB32265EEA2F00C9858D /* HomeProductCVC.swift in Sources */,
 				1585FBA82663FEC500C9858D /* HomeSaleTVC.swift in Sources */,
 				1585FB29265C185000C9858D /* HomeEventTVC.swift in Sources */,
+				15F8AC902673364300E211A4 /* CategoryExpyTVC.swift in Sources */,
+				15F8AC5E266D3BDA00E211A4 /* CategoryRepeatTVC.swift in Sources */,
 				1585FB2E265EEA0D00C9858D /* HomeProductTVC.swift in Sources */,
 				1585FB35265FE18D00C9858D /* HomeProductDataModel.swift in Sources */,
 				1585FBAC2663FF7D00C9858D /* HomeSaleCVC.swift in Sources */,
@@ -423,6 +634,7 @@
 				1585FB23265A7D1E00C9858D /* HomeEventCVC.swift in Sources */,
 				15E94F96265657BE00154B73 /* HomeTabViewController.swift in Sources */,
 				15E94F5026564E9600154B73 /* AppDelegate.swift in Sources */,
+				15F8ACCB2678897300E211A4 /* HomeCustomTabVC.swift in Sources */,
 				15E94F5226564E9600154B73 /* SceneDelegate.swift in Sources */,
 				15E94F9C265657DD00154B73 /* SearchTabViewController.swift in Sources */,
 			);
@@ -597,6 +809,7 @@
 		};
 		15E94F7726564E9700154B73 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68C9D5CE19D2C532D987175C /* Pods-MarketCurly.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -615,6 +828,7 @@
 		};
 		15E94F7826564E9700154B73 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF23E2FE8AE7F466CA32B6C6 /* Pods-MarketCurly.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -633,6 +847,7 @@
 		};
 		15E94F7A26564E9700154B73 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C54084F69DD255400F641D52 /* Pods-MarketCurlyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -654,6 +869,7 @@
 		};
 		15E94F7B26564E9700154B73 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C576F1CF4E3BD5CF491EDE38 /* Pods-MarketCurlyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -675,6 +891,7 @@
 		};
 		15E94F7D26564E9700154B73 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B531696F42B344A87D9B01C2 /* Pods-MarketCurly-MarketCurlyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -694,6 +911,7 @@
 		};
 		15E94F7E26564E9700154B73 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8C081A804CB4A0CCBE1A707 /* Pods-MarketCurly-MarketCurlyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

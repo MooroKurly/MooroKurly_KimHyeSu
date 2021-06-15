@@ -16,32 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z2x-sL-WVW">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_logo" translatesAutoresizingMaskIntoConstraints="NO" id="a1d-ok-9js">
-                                        <rect key="frame" x="175.5" y="49" width="63" height="36"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="36.130000000000003" id="AdY-fu-YNh"/>
-                                            <constraint firstAttribute="width" constant="62.579999999999998" id="n1G-AH-qEo"/>
-                                        </constraints>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zn6-0j-kPh">
-                                        <rect key="frame" x="362.5" y="53" width="28" height="23"/>
-                                        <state key="normal" image="btn_cart"/>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.45490196078431372" green="0.11764705882352941" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="88" id="D1w-cg-ksl"/>
-                                    <constraint firstItem="a1d-ok-9js" firstAttribute="centerX" secondItem="z2x-sL-WVW" secondAttribute="centerX" id="bk3-L0-sj2"/>
-                                    <constraint firstAttribute="trailing" secondItem="Zn6-0j-kPh" secondAttribute="trailing" constant="23.5" id="j6p-JT-luy"/>
-                                    <constraint firstItem="Zn6-0j-kPh" firstAttribute="top" secondItem="z2x-sL-WVW" secondAttribute="top" constant="53" id="vxh-wF-x99"/>
-                                    <constraint firstItem="a1d-ok-9js" firstAttribute="top" secondItem="z2x-sL-WVW" secondAttribute="top" constant="49" id="yz2-t5-iWa"/>
-                                </constraints>
-                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6c3-1Z-aqw">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="nZr-YA-JJZ">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="376"/>
@@ -63,7 +39,7 @@
                                             <rect key="frame" x="136" y="18" width="101" height="34"/>
                                             <state key="normal" image="buttonPrivacy"/>
                                         </button>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TnB-Ko-R4b">
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TnB-Ko-R4b">
                                             <rect key="frame" x="15" y="69" width="342" height="87"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="87" id="TtE-AA-Ar7"/>
@@ -74,7 +50,7 @@
 통신판매업 : 제 2018-서울강남-01646 호
 주소 : 서울특별시 강남구 도산대로 16길 20, 이래빌딩 B1 ~ 4F</string>
                                             <color key="textColor" red="0.59607843137254901" green="0.59999999999999998" blue="0.60392156862745094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgFooter" translatesAutoresizingMaskIntoConstraints="NO" id="MrX-Ll-GEP">
@@ -155,13 +131,10 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="z2x-sL-WVW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="32B-gt-sFl"/>
                             <constraint firstItem="6c3-1Z-aqw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="BeO-Ex-HN8"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="6c3-1Z-aqw" secondAttribute="bottom" id="JM3-XO-QTA"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="z2x-sL-WVW" secondAttribute="trailing" id="KaR-jP-hsB"/>
-                            <constraint firstItem="6c3-1Z-aqw" firstAttribute="top" secondItem="z2x-sL-WVW" secondAttribute="bottom" id="LXV-mc-eqP"/>
-                            <constraint firstItem="z2x-sL-WVW" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="jSC-Uo-3Zc"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="6c3-1Z-aqw" secondAttribute="trailing" id="nTK-Mv-waU"/>
+                            <constraint firstItem="6c3-1Z-aqw" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="zaq-4W-yXU"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="홈" image="house" catalog="system" id="eZt-16-MHM"/>
@@ -182,13 +155,11 @@
         <image name="btnInsta" width="25" height="25"/>
         <image name="btnNaver" width="25" height="25"/>
         <image name="btnYoutube" width="25" height="25"/>
-        <image name="btn_cart" width="27.5" height="23"/>
         <image name="buttonKurlyintro" width="59" height="34"/>
         <image name="buttonPrivacy" width="101" height="34"/>
         <image name="buttonTerms" width="65" height="34"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="imgFooter" width="305" height="83"/>
-        <image name="img_logo" width="63" height="36.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

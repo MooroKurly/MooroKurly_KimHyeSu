@@ -50,7 +50,7 @@ class HomeTabViewController: UIViewController {
         
         eventList.append(contentsOf: [
             HomeEventDataModel(eventImage: [EventImage(eventImageName: UIImage(named: "card_main")!),
-                                            EventImage(eventImageName: UIImage(named: "card_main")!)
+                                            EventImage(eventImageName: UIImage(named: "imgBanner2")!)
             ])
             
         ])

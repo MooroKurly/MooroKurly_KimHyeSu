@@ -1,0 +1,16 @@
+PODS:
+  - ExpyTableView (1.2.1)
+
+DEPENDENCIES:
+  - ExpyTableView
+
+SPEC REPOS:
+  trunk:
+    - ExpyTableView
+
+SPEC CHECKSUMS:
+  ExpyTableView: 19cf224c2ff04b1ec215ec52bc4ba6f81fa809ed
+
+PODFILE CHECKSUM: 4cecd9d28a29580491f36349618eb5346e5eae9c
+
+COCOAPODS: 1.10.1
