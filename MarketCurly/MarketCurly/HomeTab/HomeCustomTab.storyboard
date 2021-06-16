@@ -230,6 +230,7 @@
                         <outlet property="collectionView" destination="YJk-xH-EBE" id="vF2-33-K7K"/>
                         <outlet property="indicatorBar" destination="Pp0-s0-GvN" id="AlR-Tl-hvT"/>
                         <outlet property="scrollView" destination="Kwx-lW-nP6" id="mNg-uf-TJK"/>
+                        <outlet property="stackviewWidth" destination="M77-2q-eP9" id="LkA-Np-MvL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -12,12 +12,17 @@ class HomeCustomTabVC: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var indicatorBar: UIView!
+    @IBOutlet weak var stackviewWidth: NSLayoutConstraint!
     
     let titleList : [String] = ["컬리추천", "신상품", "베스트", "알뜰쇼핑", "금주혜택"]
     var nowPage : Int = 0
+    let viewSizeWidth : CGFloat = UIScreen.main.bounds.width
+    let viewSizeHeight : CGFloat = UIScreen.main.bounds.height
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        stackviewWidth.constant = viewSizeWidth
         registerXib()
         scrollView.delegate = self
         collectionView.delegate = self
@@ -36,40 +41,41 @@ class HomeCustomTabVC: UIViewController {
             print("0,0 되나?")
             nowPage = 0
             UIView.animate(withDuration: 0.1){
-                self.indicatorBar.frame.origin.x = 16
+                //self.indicatorBar.frame.origin.x = 16
+                self.indicatorBar.frame.origin.x = self.viewSizeWidth * (15/375)
             }
             
             
         }
-        else if scrollView.contentOffset == CGPoint(x: 390.0, y: 0.0){
+        else if scrollView.contentOffset == CGPoint(x: viewSizeWidth, y: 0.0){
             print("390 나옴?") // 나온당 ㅎㅎ
             nowPage = 1
             UIView.animate(withDuration: 0.1){
-                self.indicatorBar.frame.origin.x = 8 + 390.0/5
+                self.indicatorBar.frame.origin.x = 8 + self.viewSizeWidth/5
             }
             
         }
-        else if scrollView.contentOffset == CGPoint(x: 390.0 * 2, y: 0.0){
+        else if scrollView.contentOffset == CGPoint(x: viewSizeWidth * 2, y: 0.0){
             print("3번째 뷰컨")
             nowPage = 2
             UIView.animate(withDuration: 0.1){
-                self.indicatorBar.frame.origin.x = 4 + 390.0/5 * 2
+                self.indicatorBar.frame.origin.x = 4 + self.viewSizeWidth/5 * 2
             }
         }
-        else if scrollView.contentOffset == CGPoint(x: 390.0 * 3, y: 0.0){
+        else if scrollView.contentOffset == CGPoint(x: viewSizeWidth * 3, y: 0.0){
             print("4번째 뷰컨")
             nowPage = 3
             UIView.animate(withDuration: 0.1){
-                self.indicatorBar.frame.origin.x = 390.0/5 * 3
+                self.indicatorBar.frame.origin.x = self.viewSizeWidth/5 * 3
             }
         }
-        else if scrollView.contentOffset == CGPoint(x: 390.0 * 4, y: 0.0){
+        else if scrollView.contentOffset == CGPoint(x: viewSizeWidth * 4, y: 0.0){
             print("5번째 뷰컨")
             nowPage = 4
             print(nowPage)
             UIView.animate(withDuration: 0.1){
                 //self.indicatorBar.center = CGPoint(x: (390.0/5)*5, y: 130)
-                self.indicatorBar.frame.origin.x = 390.0/5 * 4 - 4
+                self.indicatorBar.frame.origin.x = self.viewSizeWidth/5 * 4 - 4
             }
             
         }
@@ -104,16 +110,16 @@ extension HomeCustomTabVC : UICollectionViewDelegate {
             scrollView.setContentOffset(CGPoint(x: 0.0, y: 0.0), animated: true)
  
         case 1:
-            scrollView.setContentOffset(CGPoint(x: 390.0, y: 0.0), animated: true)
+            scrollView.setContentOffset(CGPoint(x: viewSizeWidth, y: 0.0), animated: true)
  
         case 2:
-            scrollView.setContentOffset(CGPoint(x: 390.0*2, y: 0.0), animated: true)
+            scrollView.setContentOffset(CGPoint(x: viewSizeWidth * 2, y: 0.0), animated: true)
  
         case 3:
-            scrollView.setContentOffset(CGPoint(x:390.0*3, y:0.0), animated: true)
+            scrollView.setContentOffset(CGPoint(x: viewSizeWidth * 3, y:0.0), animated: true)
  
         case 4:
-            scrollView.setContentOffset(CGPoint(x: 390.0*4, y: 0.0), animated: true)
+            scrollView.setContentOffset(CGPoint(x: viewSizeWidth * 4, y: 0.0), animated: true)
  
         default:
             break
@@ -164,7 +170,7 @@ extension HomeCustomTabVC : UICollectionViewDelegateFlowLayout {
     
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 15)
+        return UIEdgeInsets(top: 0, left: viewSizeWidth * (15/375), bottom: 0, right: viewSizeWidth * (15/375))
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 0
