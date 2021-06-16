@@ -229,6 +229,7 @@
                     <connections>
                         <outlet property="collectionView" destination="YJk-xH-EBE" id="vF2-33-K7K"/>
                         <outlet property="indicatorBar" destination="Pp0-s0-GvN" id="AlR-Tl-hvT"/>
+                        <outlet property="indicatorBarWidth" destination="xQA-FC-KLd" id="QtJ-C0-EOd"/>
                         <outlet property="scrollView" destination="Kwx-lW-nP6" id="mNg-uf-TJK"/>
                         <outlet property="stackviewWidth" destination="M77-2q-eP9" id="LkA-Np-MvL"/>
                     </connections>
