@@ -22,6 +22,8 @@
 		1585FBAC2663FF7D00C9858D /* HomeSaleCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1585FBAA2663FF7D00C9858D /* HomeSaleCVC.swift */; };
 		1585FBAD2663FF7D00C9858D /* HomeSaleCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1585FBAB2663FF7D00C9858D /* HomeSaleCVC.xib */; };
 		1585FBAF26651AAC00C9858D /* HomeSaleDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1585FBAE26651AAC00C9858D /* HomeSaleDataModel.swift */; };
+		15E490F6267CB02200324ACA /* MyTabLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15E490F5267CB02200324ACA /* MyTabLogin.storyboard */; };
+		15E490F8267CB43500324ACA /* MyTabLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E490F7267CB43500324ACA /* MyTabLoginVC.swift */; };
 		15E94F5026564E9600154B73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E94F4F26564E9600154B73 /* AppDelegate.swift */; };
 		15E94F5226564E9600154B73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E94F5126564E9600154B73 /* SceneDelegate.swift */; };
 		15E94F5426564E9600154B73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E94F5326564E9600154B73 /* ViewController.swift */; };
@@ -90,6 +92,8 @@
 		1585FBAA2663FF7D00C9858D /* HomeSaleCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSaleCVC.swift; sourceTree = "<group>"; };
 		1585FBAB2663FF7D00C9858D /* HomeSaleCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeSaleCVC.xib; sourceTree = "<group>"; };
 		1585FBAE26651AAC00C9858D /* HomeSaleDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSaleDataModel.swift; sourceTree = "<group>"; };
+		15E490F5267CB02200324ACA /* MyTabLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyTabLogin.storyboard; sourceTree = "<group>"; };
+		15E490F7267CB43500324ACA /* MyTabLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabLoginVC.swift; sourceTree = "<group>"; };
 		15E94F4C26564E9600154B73 /* MarketCurly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketCurly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15E94F4F26564E9600154B73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15E94F5126564E9600154B73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -312,6 +316,8 @@
 			isa = PBXGroup;
 			children = (
 				15E94F93265657A200154B73 /* MyTab.storyboard */,
+				15E490F5267CB02200324ACA /* MyTabLogin.storyboard */,
+				15E490F7267CB43500324ACA /* MyTabLoginVC.swift */,
 				15E94F9D265657E400154B73 /* MyTabViewController.swift */,
 			);
 			path = MyTab;
@@ -476,6 +482,7 @@
 				15E94F94265657A200154B73 /* MyTab.storyboard in Resources */,
 				15F8AC912673364300E211A4 /* CategoryExpyTVC.xib in Resources */,
 				15E94F8E2656509500154B73 /* RecommendTab.storyboard in Resources */,
+				15E490F6267CB02200324ACA /* MyTabLogin.storyboard in Resources */,
 				15F8ACD12678AC6D00E211A4 /* HomeSaleShopping.storyboard in Resources */,
 				15E94F8C2656508300154B73 /* CategoryTab.storyboard in Resources */,
 				15F8ACC92678847000E211A4 /* HomeTitleLabelCVC.xib in Resources */,
@@ -622,6 +629,7 @@
 				1585FBA82663FEC500C9858D /* HomeSaleTVC.swift in Sources */,
 				1585FB29265C185000C9858D /* HomeEventTVC.swift in Sources */,
 				15F8AC902673364300E211A4 /* CategoryExpyTVC.swift in Sources */,
+				15E490F8267CB43500324ACA /* MyTabLoginVC.swift in Sources */,
 				15F8AC5E266D3BDA00E211A4 /* CategoryRepeatTVC.swift in Sources */,
 				1585FB2E265EEA0D00C9858D /* HomeProductTVC.swift in Sources */,
 				1585FB35265FE18D00C9858D /* HomeProductDataModel.swift in Sources */,
