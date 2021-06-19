@@ -10,7 +10,6 @@ import UIKit
 
 struct HomeEventDataModel {
     var eventImage : [EventImage]
-    
 }
 
 struct EventImage {

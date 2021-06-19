@@ -24,6 +24,8 @@
 		1585FBAF26651AAC00C9858D /* HomeSaleDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1585FBAE26651AAC00C9858D /* HomeSaleDataModel.swift */; };
 		15E490F6267CB02200324ACA /* MyTabLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15E490F5267CB02200324ACA /* MyTabLogin.storyboard */; };
 		15E490F8267CB43500324ACA /* MyTabLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E490F7267CB43500324ACA /* MyTabLoginVC.swift */; };
+		15E4911B267E46A600324ACA /* NetwokResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E4911A267E46A600324ACA /* NetwokResult.swift */; };
+		15E4911D267E4A1F00324ACA /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E4911C267E4A1F00324ACA /* APIConstants.swift */; };
 		15E94F5026564E9600154B73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E94F4F26564E9600154B73 /* AppDelegate.swift */; };
 		15E94F5226564E9600154B73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E94F5126564E9600154B73 /* SceneDelegate.swift */; };
 		15E94F5426564E9600154B73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E94F5326564E9600154B73 /* ViewController.swift */; };
@@ -94,6 +96,8 @@
 		1585FBAE26651AAC00C9858D /* HomeSaleDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSaleDataModel.swift; sourceTree = "<group>"; };
 		15E490F5267CB02200324ACA /* MyTabLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyTabLogin.storyboard; sourceTree = "<group>"; };
 		15E490F7267CB43500324ACA /* MyTabLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabLoginVC.swift; sourceTree = "<group>"; };
+		15E4911A267E46A600324ACA /* NetwokResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetwokResult.swift; sourceTree = "<group>"; };
+		15E4911C267E4A1F00324ACA /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		15E94F4C26564E9600154B73 /* MarketCurly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketCurly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15E94F4F26564E9600154B73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15E94F5126564E9600154B73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -208,6 +212,15 @@
 			path = HomeDataModel;
 			sourceTree = "<group>";
 		};
+		15E49119267E459300324ACA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				15E4911A267E46A600324ACA /* NetwokResult.swift */,
+				15E4911C267E4A1F00324ACA /* APIConstants.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		15E94F4326564E9600154B73 = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +246,7 @@
 		15E94F4E26564E9600154B73 /* MarketCurly */ = {
 			isa = PBXGroup;
 			children = (
+				15E49119267E459300324ACA /* Network */,
 				15E94F5526564E9600154B73 /* Main.storyboard */,
 				15E94F842656503E00154B73 /* MyTab */,
 				15E94F832656502A00154B73 /* SearchTab */,
@@ -640,8 +654,10 @@
 				15E94F98265657CC00154B73 /* CategoryTabViewController.swift in Sources */,
 				1585FBAF26651AAC00C9858D /* HomeSaleDataModel.swift in Sources */,
 				1585FB23265A7D1E00C9858D /* HomeEventCVC.swift in Sources */,
+				15E4911B267E46A600324ACA /* NetwokResult.swift in Sources */,
 				15E94F96265657BE00154B73 /* HomeTabViewController.swift in Sources */,
 				15E94F5026564E9600154B73 /* AppDelegate.swift in Sources */,
+				15E4911D267E4A1F00324ACA /* APIConstants.swift in Sources */,
 				15F8ACCB2678897300E211A4 /* HomeCustomTabVC.swift in Sources */,
 				15E94F5226564E9600154B73 /* SceneDelegate.swift in Sources */,
 				15E94F9C265657DD00154B73 /* SearchTabViewController.swift in Sources */,
