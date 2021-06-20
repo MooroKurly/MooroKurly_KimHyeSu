@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class HomeEventCVC: UICollectionViewCell {
 
@@ -21,8 +22,10 @@ class HomeEventCVC: UICollectionViewCell {
        return UINib(nibName: "HomeEventCVC", bundle: nil)
    }
 
-    func setData(image: UIImage){
-        eventImageView.image = image
+    func setData(imageURL: String){
+        //eventImageView.image = image
+        let url = URL(string: imageURL)
+        eventImageView.kf.setImage(with: url)
         
     }
     

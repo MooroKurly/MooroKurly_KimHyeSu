@@ -7,6 +7,8 @@ target 'MarketCurly' do
 
   # Pods for MarketCurly
 pod 'ExpyTableView'
+pod 'Alamofire', '~> 5.2'
+pod 'Kingfisher', '~> 6.0'
 
   target 'MarketCurlyTests' do
     inherit! :search_paths

@@ -1,16 +1,24 @@
 PODS:
+  - Alamofire (5.4.3)
   - ExpyTableView (1.2.1)
+  - Kingfisher (6.3.0)
 
 DEPENDENCIES:
+  - Alamofire (~> 5.2)
   - ExpyTableView
+  - Kingfisher (~> 6.0)
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - ExpyTableView
+    - Kingfisher
 
 SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   ExpyTableView: 19cf224c2ff04b1ec215ec52bc4ba6f81fa809ed
+  Kingfisher: 6c3df386db71d82c0817a429d2c9421a77396529
 
-PODFILE CHECKSUM: 4cecd9d28a29580491f36349618eb5346e5eae9c
+PODFILE CHECKSUM: 470693a96da037839e6414cf7d4f0cec52e3b1b6
 
 COCOAPODS: 1.10.1

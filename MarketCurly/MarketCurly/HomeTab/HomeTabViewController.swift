@@ -8,7 +8,7 @@
 import UIKit
 
 class HomeTabViewController: UIViewController {
-
+    
     var eventList : [HomeEventDataModel] = []
     
     var productList : [HomeProductDataModel] = []
@@ -43,42 +43,43 @@ class HomeTabViewController: UIViewController {
         
         let saleNib = UINib(nibName: HomeSaleTVC.identifier, bundle: nil)
         homeTableView.register(saleNib, forCellReuseIdentifier: HomeSaleTVC.identifier)
-   
+        
     }
+    
+
     
     func setData(){
         
-        eventList.append(contentsOf: [
-            HomeEventDataModel(eventImage: [EventImage(eventImageName: UIImage(named: "card_main")!),
-                                            EventImage(eventImageName: UIImage(named: "imgBanner2")!)
-            ])
-            
-        ])
+        eventList = HomeEventTVC.imageList
+        
+        
+        
         productList.append(contentsOf: [
             HomeProductDataModel(title: "이 상품 어때요?", product:
                                     [Product(productImage: UIImage(named: "imgProduct")!, productName: "[우리밀] 두부과자", productSale: "4%", productPrice: "2,200원"),
                                      Product(productImage: UIImage(named: "imgProduct")!, productName: "[우리밀] 두부과자", productSale: "4%", productPrice: "2,200원"),
                                      Product(productImage: UIImage(named: "imgProduct")!, productName: "[우리밀] 두부과자", productSale: "4%", productPrice: "2,200원")
                                     ])
-        
+            
         ])
         
         saleList.append(contentsOf: [
             HomeSaleDataModel(title: "일일특가", subtitle: "24시간 한정 특가", dailySale:
                                 [DailySale(dailySaleImage: UIImage(named: "imgDailysale")!, dailySaleTitle: "[Kurly’s] 간편하게 바삭, 통등심 돈까스", dailySalePercent: "33%", dailySalePrice: "3,819원", dailyTime: "17:04:11"),
                                  DailySale(dailySaleImage: UIImage(named: "imgDailysale")!, dailySaleTitle: "[Kurly’s] 간편하게 바삭, 통등심 돈까스", dailySalePercent: "33%", dailySalePrice: "3,819원", dailyTime: "17:04:11")
-                                    
+                                 
                                 ])
         ])
         
-
+        
         
     }
-
-  
-
-
+    
+    
+    
+    
 }
+
 
 extension HomeTabViewController : UITableViewDelegate {
     
@@ -95,14 +96,14 @@ extension HomeTabViewController : UITableViewDataSource {
         switch section {
         
         case 0:
-            return eventList.count
-        
+            return 1
+            
         case 1:
             return productList.count
             
         case 2:
             return saleList.count
-        
+            
         default:
             return 0
         }
@@ -114,7 +115,10 @@ extension HomeTabViewController : UITableViewDataSource {
         switch indexPath.section {
         case 0:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: HomeEventTVC.identifier, for: indexPath) as? HomeEventTVC else { return UITableViewCell() }
-            cell.setData(homeEventModel: eventList[indexPath.row])
+            //cell.setData(homeEventModel: eventList[indexPath.row])
+            //cell.setData(imageURL: HomeEventTVC.imageList[indexPath.row].img)
+            cell.getBannerData()
+            
             return cell
             
         case 1:
@@ -126,7 +130,7 @@ extension HomeTabViewController : UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: HomeSaleTVC.identifier, for: indexPath) as? HomeSaleTVC else { return UITableViewCell() }
             cell.setData(saleModel: saleList[indexPath.row] )
             return cell
-        
+            
             
         default:
             return UITableViewCell()
@@ -145,7 +149,7 @@ extension HomeTabViewController : UITableViewDataSource {
             return UIScreen.main.bounds.height * (419/812)
             
         case 2:
-
+            
             return UIScreen.main.bounds.height * (343/812) * 2
             
         default:

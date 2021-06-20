@@ -11,14 +11,14 @@ class HomeEventTVC: UITableViewCell {
     
     public static let identifier = "HomeEventTVC"
 
-    private var imageList : [EventImage] = []
+    public static var imageList : [HomeEventDataModel] = []
+    var i : Int = 0
     
     @IBOutlet weak var homeEventCVC: UICollectionView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         registerXib()
-        
         homeEventCVC.delegate = self
         homeEventCVC.dataSource = self
         // Initialization code
@@ -36,14 +36,46 @@ class HomeEventTVC: UITableViewCell {
        return UINib(nibName: "HomeEventTVC", bundle: nil)
     }
     
-    
-    
+    func getBannerData() {
+        HomeEventService.shared.getHomeEventAds { (response) in
+                    switch(response){
+                    
+                    case .success(let eventData):
+                        if let data = eventData as? [HomeEventDataModel] {
+                            for dataReal in data {
+                                HomeEventTVC.imageList.append(contentsOf:
+                                                                [HomeEventDataModel(id: dataReal.id, img: dataReal.img)])
+                                print(self.i)
+                                self.i = self.i+1
+                            }
+                            //HomeEventTVC.imageList = data
+                            
+                            self.homeEventCVC.reloadData()
+                        }
+                    
+                    case .requestErr(let message) :
+                        print("requestERR", message)
+                    case .pathErr :
+                        print("pathERR")
+                    case .serverErr:
+                        print("serverERR")
+                    case .networkFail:
+                        print("networkFail")
+                        
+                    }
+                    
+                }
+    }
 }
+    
+    
+    
+
 
 extension HomeEventTVC : UICollectionViewDataSource {
     // Cell 몇 개 만들지
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return imageList.count
+        return HomeEventTVC.imageList.count
     }
     
     
@@ -52,8 +84,10 @@ extension HomeEventTVC : UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeEventCVC.identifier, for: indexPath) as? HomeEventCVC else { return  UICollectionViewCell() }
         
         
-        cell.setData(image: imageList[indexPath.row].eventImageName)
         
+        //cell.setData(image: imageList[indexPath.row].eventImageName)
+        //cell.setData(imageURL: imageList[indexPath.row])
+        cell.setData(imageURL: HomeEventTVC.imageList[indexPath.row].img)
         
         return cell
         
@@ -104,10 +138,15 @@ extension HomeEventTVC {
 
     }
     
-    func setData(homeEventModel: HomeEventDataModel) {
-        
-        imageList = homeEventModel.eventImage
-        
-    }
+//    func setData(homeEventModel: HomeEventDataModel) {
+//
+//        imageList = homeEventModel.eventImage
+//
+//    }
 
+    func setData(imageURL : String){
+        
+//        let url = URL(string: imageURL)
+//        eventImageView.kf.setImage(with: url)
+    }
 }
