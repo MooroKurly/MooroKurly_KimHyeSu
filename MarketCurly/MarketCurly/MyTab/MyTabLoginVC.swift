@@ -10,22 +10,34 @@ import UIKit
 class MyTabLoginVC: UIViewController {
 
     @IBOutlet weak var joinButton: UIButton!
+    @IBOutlet weak var idTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         joinButton.layer.borderColor = UIColor.purple.cgColor
         joinButton.layer.borderWidth = 1
-        // Do any additional setup after loading the view.
+        
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func loginButtonClicked(_ sender: Any) {
+        loginAction()
     }
-    */
+    
+    func loginAction(){
+        LoginService.shared.login(id: self.idTextField.text!, pw: self.passwordTextField.text!){ result in
+            switch result {
+            case .success:
+                self.makeAlert(title: "알림", message: "로그인 성공")
+            case .requestErr:
+                self.makeAlert(title: "알림", message: "로그인 실패")
+            default:
+                print("오류")
+            }
+            
+        }
+    }
+    
 
 }

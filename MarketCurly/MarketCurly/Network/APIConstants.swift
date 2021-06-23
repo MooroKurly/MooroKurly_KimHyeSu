@@ -22,4 +22,7 @@ struct APIConstants{
     // MARK: - Home URL
     static let productAdURL = baseURL + "/products/ad"
     static let productThisURL = baseURL + "/products/this"
+    
+    // MARK: - Login URL
+    static let loginURL = baseURL + "/auth"
 }

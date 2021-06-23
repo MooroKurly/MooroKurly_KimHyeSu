@@ -28,6 +28,9 @@
 		15E4911D267E4A1F00324ACA /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E4911C267E4A1F00324ACA /* APIConstants.swift */; };
 		15E49124267F533200324ACA /* HomeEventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E49123267F533200324ACA /* HomeEventService.swift */; };
 		15E49128268322A300324ACA /* HomeThisService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E49127268322A300324ACA /* HomeThisService.swift */; };
+		15E4912B2683374500324ACA /* LoginDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E4912A2683374500324ACA /* LoginDataModel.swift */; };
+		15E4912E268337C000324ACA /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E4912D268337C000324ACA /* LoginService.swift */; };
+		15E4913126833EBC00324ACA /* UIViewController + makeAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E4913026833EBC00324ACA /* UIViewController + makeAlert.swift */; };
 		15E94F5026564E9600154B73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E94F4F26564E9600154B73 /* AppDelegate.swift */; };
 		15E94F5226564E9600154B73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E94F5126564E9600154B73 /* SceneDelegate.swift */; };
 		15E94F5426564E9600154B73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E94F5326564E9600154B73 /* ViewController.swift */; };
@@ -102,6 +105,9 @@
 		15E4911C267E4A1F00324ACA /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		15E49123267F533200324ACA /* HomeEventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEventService.swift; sourceTree = "<group>"; };
 		15E49127268322A300324ACA /* HomeThisService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeThisService.swift; sourceTree = "<group>"; };
+		15E4912A2683374500324ACA /* LoginDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataModel.swift; sourceTree = "<group>"; };
+		15E4912D268337C000324ACA /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		15E4913026833EBC00324ACA /* UIViewController + makeAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + makeAlert.swift"; sourceTree = "<group>"; };
 		15E94F4C26564E9600154B73 /* MarketCurly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketCurly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15E94F4F26564E9600154B73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15E94F5126564E9600154B73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -234,6 +240,30 @@
 			path = HomeService;
 			sourceTree = "<group>";
 		};
+		15E491292683373800324ACA /* MyTabDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				15E4912A2683374500324ACA /* LoginDataModel.swift */,
+			);
+			path = MyTabDataModel;
+			sourceTree = "<group>";
+		};
+		15E4912C268337B300324ACA /* MyTabService */ = {
+			isa = PBXGroup;
+			children = (
+				15E4912D268337C000324ACA /* LoginService.swift */,
+			);
+			path = MyTabService;
+			sourceTree = "<group>";
+		};
+		15E4912F26833E4800324ACA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				15E4913026833EBC00324ACA /* UIViewController + makeAlert.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		15E94F4326564E9600154B73 = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +289,7 @@
 		15E94F4E26564E9600154B73 /* MarketCurly */ = {
 			isa = PBXGroup;
 			children = (
+				15E4912F26833E4800324ACA /* Extension */,
 				15E49119267E459300324ACA /* Network */,
 				15E94F5526564E9600154B73 /* Main.storyboard */,
 				15E94F842656503E00154B73 /* MyTab */,
@@ -343,6 +374,8 @@
 		15E94F842656503E00154B73 /* MyTab */ = {
 			isa = PBXGroup;
 			children = (
+				15E4912C268337B300324ACA /* MyTabService */,
+				15E491292683373800324ACA /* MyTabDataModel */,
 				15E94F93265657A200154B73 /* MyTab.storyboard */,
 				15E490F5267CB02200324ACA /* MyTabLogin.storyboard */,
 				15E490F7267CB43500324ACA /* MyTabLoginVC.swift */,
@@ -668,6 +701,7 @@
 				15E94F5426564E9600154B73 /* ViewController.swift in Sources */,
 				15E94F98265657CC00154B73 /* CategoryTabViewController.swift in Sources */,
 				1585FBAF26651AAC00C9858D /* HomeSaleDataModel.swift in Sources */,
+				15E4913126833EBC00324ACA /* UIViewController + makeAlert.swift in Sources */,
 				1585FB23265A7D1E00C9858D /* HomeEventCVC.swift in Sources */,
 				15E4911B267E46A600324ACA /* NetwokResult.swift in Sources */,
 				15E94F96265657BE00154B73 /* HomeTabViewController.swift in Sources */,
@@ -676,7 +710,9 @@
 				15E49124267F533200324ACA /* HomeEventService.swift in Sources */,
 				15F8ACCB2678897300E211A4 /* HomeCustomTabVC.swift in Sources */,
 				15E94F5226564E9600154B73 /* SceneDelegate.swift in Sources */,
+				15E4912B2683374500324ACA /* LoginDataModel.swift in Sources */,
 				15E94F9C265657DD00154B73 /* SearchTabViewController.swift in Sources */,
+				15E4912E268337C000324ACA /* LoginService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

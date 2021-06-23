@@ -74,6 +74,9 @@
                                 <state key="normal" title="로그인">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButtonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="EWS-Gd-AmZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2F4-NS-329">
                                 <rect key="frame" x="110" y="267" width="69" height="30"/>
@@ -140,7 +143,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="idTextField" destination="fuh-VL-9LL" id="RxW-3n-egt"/>
                         <outlet property="joinButton" destination="1Ee-Cm-1Vi" id="Giu-yg-qBk"/>
+                        <outlet property="passwordTextField" destination="fEe-9U-a9Q" id="pmb-RK-xRG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
