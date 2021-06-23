@@ -27,6 +27,7 @@
 		15E4911B267E46A600324ACA /* NetwokResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E4911A267E46A600324ACA /* NetwokResult.swift */; };
 		15E4911D267E4A1F00324ACA /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E4911C267E4A1F00324ACA /* APIConstants.swift */; };
 		15E49124267F533200324ACA /* HomeEventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E49123267F533200324ACA /* HomeEventService.swift */; };
+		15E49128268322A300324ACA /* HomeThisService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E49127268322A300324ACA /* HomeThisService.swift */; };
 		15E94F5026564E9600154B73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E94F4F26564E9600154B73 /* AppDelegate.swift */; };
 		15E94F5226564E9600154B73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E94F5126564E9600154B73 /* SceneDelegate.swift */; };
 		15E94F5426564E9600154B73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E94F5326564E9600154B73 /* ViewController.swift */; };
@@ -100,6 +101,7 @@
 		15E4911A267E46A600324ACA /* NetwokResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetwokResult.swift; sourceTree = "<group>"; };
 		15E4911C267E4A1F00324ACA /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		15E49123267F533200324ACA /* HomeEventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEventService.swift; sourceTree = "<group>"; };
+		15E49127268322A300324ACA /* HomeThisService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeThisService.swift; sourceTree = "<group>"; };
 		15E94F4C26564E9600154B73 /* MarketCurly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketCurly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15E94F4F26564E9600154B73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15E94F5126564E9600154B73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				15E49123267F533200324ACA /* HomeEventService.swift */,
+				15E49127268322A300324ACA /* HomeThisService.swift */,
 			);
 			path = HomeService;
 			sourceTree = "<group>";
@@ -648,6 +651,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15E49128268322A300324ACA /* HomeThisService.swift in Sources */,
 				15E94F9E265657E400154B73 /* MyTabViewController.swift in Sources */,
 				15F8ACC82678847000E211A4 /* HomeTitleLabelCVC.swift in Sources */,
 				1585FB32265EEA2F00C9858D /* HomeProductCVC.swift in Sources */,

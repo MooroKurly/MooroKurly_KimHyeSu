@@ -10,8 +10,9 @@ import UIKit
 class HomeProductTVC: UITableViewCell {
     
     public static let identifier = "HomeProductTVC"
+    public static var productList : [HomeProductDataModel] = []
     
-    private var product : [Product] = []
+    //private var product : [Product] = []
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -38,10 +39,32 @@ class HomeProductTVC: UITableViewCell {
         collectionView.register(nib, forCellWithReuseIdentifier: HomeProductCVC.identifier)
     }
     
-    func setData(productList: HomeProductDataModel){
-        titleLabel.text = productList.title
-        product = productList.product
+    func setData(){
+        titleLabel.text = "이 상품 어때요?"
         
+    }
+    
+    func getProductThisData(){
+        HomeThisService.shared.getHomeThis{ (response) in
+            switch response {
+            case .success(let thisData):
+                if let data = thisData as? [HomeProductDataModel]{
+                    for dataReal in data {
+                        HomeProductTVC.productList.append(contentsOf: [HomeProductDataModel(id: dataReal.id, thumbnail: dataReal.thumbnail, store: dataReal.store, title: dataReal.title, subtitle: dataReal.subtitle, price: dataReal.price, discount: dataReal.discount, category: dataReal.category, v: dataReal.v, bargain: dataReal.bargain)])
+                        
+                    }
+                    self.collectionView.reloadData()
+                }
+            case .requestErr(let message) :
+                print("requestERR", message)
+            case .pathErr :
+                print("pathERR")
+            case .serverErr:
+                print("serverERR")
+            case .networkFail:
+                print("networkFail")
+            }
+        }
     }
     
 }
@@ -52,14 +75,18 @@ extension HomeProductTVC : UICollectionViewDelegate {
 
 extension HomeProductTVC : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        product.count
+        HomeProductTVC.productList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeProductCVC.identifier, for: indexPath) as? HomeProductCVC else {
             return UICollectionViewCell()
         }
-        cell.setData(image: product[indexPath.row].productImage, productName: product[indexPath.row].productName, productSale: product[indexPath.row].productSale, productPrice: product[indexPath.row].productPrice)
+        cell.setData(image: HomeProductTVC.productList[indexPath.row].thumbnail,
+                     productName: HomeProductTVC.productList[indexPath.row].title,
+                     productSale: String(HomeProductTVC.productList[indexPath.row].discount) + "%",
+                     productPrice: String(HomeProductTVC.productList[indexPath.row].price) + "원")
+
         
         return cell
     }

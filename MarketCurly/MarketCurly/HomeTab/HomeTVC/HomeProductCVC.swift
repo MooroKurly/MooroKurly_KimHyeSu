@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class HomeProductCVC: UICollectionViewCell {
 
@@ -26,8 +27,15 @@ class HomeProductCVC: UICollectionViewCell {
        return UINib(nibName: "HomeProductCVC", bundle: nil)
    }
     
-    func setData(image: UIImage, productName: String, productSale: String, productPrice: String) {
-        productImageView.image = image
+//    func setData(image: UIImage, productName: String, productSale: String, productPrice: String) {
+//        productImageView.image = image
+//        productNameLabel.text = productName
+//        productSaleLabel.text = productSale
+//        productPriceLabel.text = productPrice
+//    }
+    func setData(image: String, productName: String, productSale: String, productPrice: String) {
+        let url = URL(string: image)
+        productImageView.kf.setImage(with: url)
         productNameLabel.text = productName
         productSaleLabel.text = productSale
         productPriceLabel.text = productPrice

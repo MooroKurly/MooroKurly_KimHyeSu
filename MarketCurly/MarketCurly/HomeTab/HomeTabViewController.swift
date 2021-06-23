@@ -23,6 +23,7 @@ class HomeTabViewController: UIViewController {
         super.viewDidLoad()
         registerXib()
         setData()
+        print(eventList.count)
         homeTableView.delegate = self
         homeTableView.dataSource = self
         homeTableView.allowsSelection = false
@@ -51,17 +52,17 @@ class HomeTabViewController: UIViewController {
     func setData(){
         
         eventList = HomeEventTVC.imageList
+        productList = HomeProductTVC.productList
         
         
-        
-        productList.append(contentsOf: [
-            HomeProductDataModel(title: "이 상품 어때요?", product:
-                                    [Product(productImage: UIImage(named: "imgProduct")!, productName: "[우리밀] 두부과자", productSale: "4%", productPrice: "2,200원"),
-                                     Product(productImage: UIImage(named: "imgProduct")!, productName: "[우리밀] 두부과자", productSale: "4%", productPrice: "2,200원"),
-                                     Product(productImage: UIImage(named: "imgProduct")!, productName: "[우리밀] 두부과자", productSale: "4%", productPrice: "2,200원")
-                                    ])
-            
-        ])
+//        productList.append(contentsOf: [
+//            HomeProductDataModel(title: "이 상품 어때요?", product:
+//                                    [Product(productImage: UIImage(named: "imgProduct")!, productName: "[우리밀] 두부과자", productSale: "4%", productPrice: "2,200원"),
+//                                     Product(productImage: UIImage(named: "imgProduct")!, productName: "[우리밀] 두부과자", productSale: "4%", productPrice: "2,200원"),
+//                                     Product(productImage: UIImage(named: "imgProduct")!, productName: "[우리밀] 두부과자", productSale: "4%", productPrice: "2,200원")
+//                                    ])
+//            
+//        ])
         
         saleList.append(contentsOf: [
             HomeSaleDataModel(title: "일일특가", subtitle: "24시간 한정 특가", dailySale:
@@ -71,7 +72,7 @@ class HomeTabViewController: UIViewController {
                                 ])
         ])
         
-        
+    
         
     }
     
@@ -88,7 +89,7 @@ extension HomeTabViewController : UITableViewDelegate {
 extension HomeTabViewController : UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3  // 두개의 섹션을 사용할 것
+        return 3
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -99,7 +100,7 @@ extension HomeTabViewController : UITableViewDataSource {
             return 1
             
         case 1:
-            return productList.count
+            return 1
             
         case 2:
             return saleList.count
@@ -123,7 +124,8 @@ extension HomeTabViewController : UITableViewDataSource {
             
         case 1:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: HomeProductTVC.identifier, for: indexPath) as? HomeProductTVC else { return UITableViewCell() }
-            cell.setData(productList: productList[indexPath.row])
+            cell.getProductThisData()
+            cell.setData()
             return cell
             
         case 2:
