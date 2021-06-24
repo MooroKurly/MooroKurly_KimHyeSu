@@ -39,6 +39,7 @@ class MyTabViewController: UIViewController {
         // 화면전환
         let sb = UIStoryboard(name: "MyTabLogin", bundle: nil)
         guard let nextVC = sb.instantiateViewController(identifier: MyTabLoginVC.identifier) as? MyTabLoginVC else { return }
+        nextVC.modalPresentationStyle = .fullScreen
         self.present(nextVC, animated: true, completion: nil)
     }
     
