@@ -19,7 +19,7 @@ class MyTabLoginVC: UIViewController {
         super.viewDidLoad()
         joinButton.layer.borderColor = UIColor.purple.cgColor
         joinButton.layer.borderWidth = 1
-        
+    
     }
     
 

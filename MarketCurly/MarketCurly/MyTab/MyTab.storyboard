@@ -18,18 +18,30 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k2M-dH-LHm">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="마이컬리" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKR-ye-hSf">
+                                        <rect key="frame" x="70" y="52" width="274" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <color key="textColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="0.43529411759999997" green="0.01176470588" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="lKR-ye-hSf" firstAttribute="top" secondItem="k2M-dH-LHm" secondAttribute="top" constant="52" id="OCk-qW-TLH"/>
                                     <constraint firstAttribute="height" constant="88" id="XOn-hY-Y2y"/>
+                                    <constraint firstAttribute="trailing" secondItem="lKR-ye-hSf" secondAttribute="trailing" constant="70" id="fZS-Ke-Bqz"/>
+                                    <constraint firstAttribute="bottom" secondItem="lKR-ye-hSf" secondAttribute="bottom" constant="16" id="jtw-4G-4dA"/>
+                                    <constraint firstItem="lKR-ye-hSf" firstAttribute="leading" secondItem="k2M-dH-LHm" secondAttribute="leading" constant="70" id="y2n-5T-2JQ"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="H5C-vq-dsf">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="H5C-vq-dsf">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
                         <constraints>
                             <constraint firstItem="H5C-vq-dsf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="11P-Ee-gua"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="H5C-vq-dsf" secondAttribute="bottom" id="4ga-fP-ikr"/>
@@ -56,6 +68,9 @@
         <image name="ic_my-1" width="23" height="21.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
