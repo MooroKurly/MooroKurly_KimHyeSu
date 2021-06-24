@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--My Tab LoginVC-->
+        <!--MyTabLoginVC-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="MyTabLoginVC" customModule="MarketCurly" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MyTabLoginVC" title="MyTabLoginVC" id="Y6W-OH-hqX" customClass="MyTabLoginVC" customModule="MarketCurly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,6 +23,9 @@
                                         <rect key="frame" x="18" y="53" width="17.5" height="23"/>
                                         <color key="tintColor" systemColor="labelColor"/>
                                         <state key="normal" image="xmark" catalog="system"/>
+                                        <connections>
+                                            <action selector="backButtonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="kna-eG-Gmb"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로그인" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwN-72-gx1">
                                         <rect key="frame" x="100" y="52" width="214" height="21"/>

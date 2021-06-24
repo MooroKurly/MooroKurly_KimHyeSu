@@ -8,6 +8,8 @@
 import UIKit
 
 class MyTabLoginVC: UIViewController {
+    
+    public static let identifier = "MyTabLoginVC"
 
     @IBOutlet weak var joinButton: UIButton!
     @IBOutlet weak var idTextField: UITextField!
@@ -23,6 +25,10 @@ class MyTabLoginVC: UIViewController {
 
     @IBAction func loginButtonClicked(_ sender: Any) {
         loginAction()
+    }
+    
+    @IBAction func backButtonClicked(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     func loginAction(){

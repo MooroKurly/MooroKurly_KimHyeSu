@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,14 +13,14 @@
             <objects>
                 <viewController storyboardIdentifier="HomeTabViewController" id="Y6W-OH-hqX" customClass="HomeTabViewController" customModule="MarketCurly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6c3-1Z-aqw">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="44" width="390" height="717"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="nZr-YA-JJZ">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="376"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="376"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MwN-xz-PRA">
@@ -40,7 +40,7 @@
                                             <state key="normal" image="buttonPrivacy"/>
                                         </button>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TnB-Ko-R4b">
-                                            <rect key="frame" x="15" y="69" width="342" height="87"/>
+                                            <rect key="frame" x="15" y="69" width="318" height="87"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="87" id="TtE-AA-Ar7"/>
                                             </constraints>
@@ -137,7 +137,7 @@
                             <constraint firstItem="6c3-1Z-aqw" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="zaq-4W-yXU"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="홈" image="house" catalog="system" id="eZt-16-MHM"/>
+                    <tabBarItem key="tabBarItem" title="홈" image="ic_home" selectedImage="ic_home-1" id="eZt-16-MHM"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="homeTableFooterView" destination="nZr-YA-JJZ" id="aSG-7o-EKV"/>
@@ -158,7 +158,8 @@
         <image name="buttonKurlyintro" width="59" height="34"/>
         <image name="buttonPrivacy" width="101" height="34"/>
         <image name="buttonTerms" width="65" height="34"/>
-        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="ic_home" width="23" height="22"/>
+        <image name="ic_home-1" width="23" height="22"/>
         <image name="imgFooter" width="305" height="83"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

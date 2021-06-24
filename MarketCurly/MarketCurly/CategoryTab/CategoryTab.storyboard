@@ -40,7 +40,7 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="gxI-Na-6SH" secondAttribute="trailing" id="vn0-lK-zBV"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="카테고리" image="book" catalog="system" id="taP-Qb-5MP"/>
+                    <tabBarItem key="tabBarItem" title="카테고리" image="ic_category" selectedImage="ic_category-1" id="taP-Qb-5MP"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="categoryTableView" destination="gxI-Na-6SH" id="XAx-uE-nfP"/>
@@ -52,7 +52,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="book" catalog="system" width="128" height="102"/>
+        <image name="ic_category" width="22" height="17"/>
+        <image name="ic_category-1" width="24" height="19"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

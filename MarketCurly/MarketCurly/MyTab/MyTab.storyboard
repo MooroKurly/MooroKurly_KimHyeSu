@@ -23,41 +23,37 @@
                                     <constraint firstAttribute="height" constant="88" id="XOn-hY-Y2y"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBP-6Q-tcE">
-                                <rect key="frame" x="220" y="281" width="39" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="로그인"/>
-                                <connections>
-                                    <segue destination="uyI-gm-JDx" kind="presentation" id="uUb-Uv-jAU"/>
-                                </connections>
-                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="H5C-vq-dsf">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="H5C-vq-dsf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="11P-Ee-gua"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="H5C-vq-dsf" secondAttribute="bottom" id="4ga-fP-ikr"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="H5C-vq-dsf" secondAttribute="trailing" id="QEv-aj-iKJ"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="k2M-dH-LHm" secondAttribute="trailing" id="Rbg-Kf-UTI"/>
                             <constraint firstItem="k2M-dH-LHm" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="ano-Mx-4C8"/>
+                            <constraint firstItem="H5C-vq-dsf" firstAttribute="top" secondItem="k2M-dH-LHm" secondAttribute="bottom" id="tYF-Bs-V8w"/>
                             <constraint firstItem="k2M-dH-LHm" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="xpD-ex-GKe"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="마이컬리" image="person" catalog="system" id="SC8-fu-fsT"/>
+                    <tabBarItem key="tabBarItem" title="마이컬리" image="ic_my" selectedImage="ic_my-1" id="SC8-fu-fsT"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="H5C-vq-dsf" id="sNf-H7-ntZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
         </scene>
-        <!--MyTabLogin-->
-        <scene sceneID="VAF-Co-hLL">
-            <objects>
-                <viewControllerPlaceholder storyboardName="MyTabLogin" id="uyI-gm-JDx" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zYt-ZM-LY1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1044" y="49"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="ic_my" width="23" height="21.5"/>
+        <image name="ic_my-1" width="23" height="21.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

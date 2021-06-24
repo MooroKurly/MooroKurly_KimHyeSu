@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		154CDF2B268351B100566FA7 /* MyTopTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154CDF29268351B100566FA7 /* MyTopTVC.swift */; };
+		154CDF2C268351B100566FA7 /* MyTopTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 154CDF2A268351B100566FA7 /* MyTopTVC.xib */; };
 		1585FB23265A7D1E00C9858D /* HomeEventCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1585FB21265A7D1E00C9858D /* HomeEventCVC.swift */; };
 		1585FB24265A7D1E00C9858D /* HomeEventCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1585FB22265A7D1E00C9858D /* HomeEventCVC.xib */; };
 		1585FB26265A824D00C9858D /* HomeEventDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1585FB25265A824D00C9858D /* HomeEventDataModel.swift */; };
@@ -84,6 +86,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		154CDF29268351B100566FA7 /* MyTopTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTopTVC.swift; sourceTree = "<group>"; };
+		154CDF2A268351B100566FA7 /* MyTopTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTopTVC.xib; sourceTree = "<group>"; };
 		1585FB21265A7D1E00C9858D /* HomeEventCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEventCVC.swift; sourceTree = "<group>"; };
 		1585FB22265A7D1E00C9858D /* HomeEventCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeEventCVC.xib; sourceTree = "<group>"; };
 		1585FB25265A824D00C9858D /* HomeEventDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEventDataModel.swift; sourceTree = "<group>"; };
@@ -183,6 +187,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		154CDF282683515100566FA7 /* MyTabCell */ = {
+			isa = PBXGroup;
+			children = (
+				154CDF29268351B100566FA7 /* MyTopTVC.swift */,
+				154CDF2D268351B400566FA7 /* MyTabXib */,
+			);
+			path = MyTabCell;
+			sourceTree = "<group>";
+		};
+		154CDF2D268351B400566FA7 /* MyTabXib */ = {
+			isa = PBXGroup;
+			children = (
+				154CDF2A268351B100566FA7 /* MyTopTVC.xib */,
+			);
+			path = MyTabXib;
+			sourceTree = "<group>";
+		};
 		1585FB1D265A6EA600C9858D /* HomeTVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -380,6 +401,7 @@
 				15E490F5267CB02200324ACA /* MyTabLogin.storyboard */,
 				15E490F7267CB43500324ACA /* MyTabLoginVC.swift */,
 				15E94F9D265657E400154B73 /* MyTabViewController.swift */,
+				154CDF282683515100566FA7 /* MyTabCell */,
 			);
 			path = MyTab;
 			sourceTree = "<group>";
@@ -537,6 +559,7 @@
 				15E94F5C26564E9700154B73 /* LaunchScreen.storyboard in Resources */,
 				15F8ACC52678836500E211A4 /* HomeCustomTab.storyboard in Resources */,
 				15E94F862656505500154B73 /* HomeTab.storyboard in Resources */,
+				154CDF2C268351B100566FA7 /* MyTopTVC.xib in Resources */,
 				15E94F5926564E9700154B73 /* Assets.xcassets in Resources */,
 				15F8ACCD2678ABCF00E211A4 /* HomeNewProduct.storyboard in Resources */,
 				15E94F90265650C100154B73 /* SearchTab.storyboard in Resources */,
@@ -705,6 +728,7 @@
 				1585FB23265A7D1E00C9858D /* HomeEventCVC.swift in Sources */,
 				15E4911B267E46A600324ACA /* NetwokResult.swift in Sources */,
 				15E94F96265657BE00154B73 /* HomeTabViewController.swift in Sources */,
+				154CDF2B268351B100566FA7 /* MyTopTVC.swift in Sources */,
 				15E94F5026564E9600154B73 /* AppDelegate.swift in Sources */,
 				15E4911D267E4A1F00324ACA /* APIConstants.swift in Sources */,
 				15E49124267F533200324ACA /* HomeEventService.swift in Sources */,
