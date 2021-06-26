@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1515C06E26876B7400B4F620 /* MyBannerTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1515C06C26876B7400B4F620 /* MyBannerTVC.swift */; };
+		1515C06F26876B7400B4F620 /* MyBannerTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1515C06D26876B7400B4F620 /* MyBannerTVC.xib */; };
 		154CDF2B268351B100566FA7 /* MyTopTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154CDF29268351B100566FA7 /* MyTopTVC.swift */; };
 		154CDF2C268351B100566FA7 /* MyTopTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 154CDF2A268351B100566FA7 /* MyTopTVC.xib */; };
 		15644C6626846CEF0049C3B9 /* BackgroundXib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15644C6426846CEF0049C3B9 /* BackgroundXib.swift */; };
 		15644C6726846CEF0049C3B9 /* BackgroundXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15644C6526846CEF0049C3B9 /* BackgroundXib.xib */; };
 		15644C6E26846E5B0049C3B9 /* LabelTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15644C6C26846E5B0049C3B9 /* LabelTVC.swift */; };
 		15644C6F26846E5B0049C3B9 /* LabelTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15644C6D26846E5B0049C3B9 /* LabelTVC.xib */; };
+		15644C71268484E50049C3B9 /* LoginOKMyTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15644C70268484E50049C3B9 /* LoginOKMyTab.storyboard */; };
+		15644C76268485A10049C3B9 /* LoginOKTopTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15644C74268485A10049C3B9 /* LoginOKTopTVC.swift */; };
+		15644C77268485A10049C3B9 /* LoginOKTopTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15644C75268485A10049C3B9 /* LoginOKTopTVC.xib */; };
+		15644C79268485DF0049C3B9 /* LoginOKMyTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15644C78268485DF0049C3B9 /* LoginOKMyTabVC.swift */; };
 		1585FB23265A7D1E00C9858D /* HomeEventCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1585FB21265A7D1E00C9858D /* HomeEventCVC.swift */; };
 		1585FB24265A7D1E00C9858D /* HomeEventCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1585FB22265A7D1E00C9858D /* HomeEventCVC.xib */; };
 		1585FB26265A824D00C9858D /* HomeEventDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1585FB25265A824D00C9858D /* HomeEventDataModel.swift */; };
@@ -90,12 +96,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1515C06C26876B7400B4F620 /* MyBannerTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBannerTVC.swift; sourceTree = "<group>"; };
+		1515C06D26876B7400B4F620 /* MyBannerTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyBannerTVC.xib; sourceTree = "<group>"; };
 		154CDF29268351B100566FA7 /* MyTopTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTopTVC.swift; sourceTree = "<group>"; };
 		154CDF2A268351B100566FA7 /* MyTopTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTopTVC.xib; sourceTree = "<group>"; };
 		15644C6426846CEF0049C3B9 /* BackgroundXib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundXib.swift; sourceTree = "<group>"; };
 		15644C6526846CEF0049C3B9 /* BackgroundXib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BackgroundXib.xib; sourceTree = "<group>"; };
 		15644C6C26846E5B0049C3B9 /* LabelTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTVC.swift; sourceTree = "<group>"; };
 		15644C6D26846E5B0049C3B9 /* LabelTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelTVC.xib; sourceTree = "<group>"; };
+		15644C70268484E50049C3B9 /* LoginOKMyTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginOKMyTab.storyboard; sourceTree = "<group>"; };
+		15644C74268485A10049C3B9 /* LoginOKTopTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOKTopTVC.swift; sourceTree = "<group>"; };
+		15644C75268485A10049C3B9 /* LoginOKTopTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginOKTopTVC.xib; sourceTree = "<group>"; };
+		15644C78268485DF0049C3B9 /* LoginOKMyTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOKMyTabVC.swift; sourceTree = "<group>"; };
 		1585FB21265A7D1E00C9858D /* HomeEventCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEventCVC.swift; sourceTree = "<group>"; };
 		1585FB22265A7D1E00C9858D /* HomeEventCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeEventCVC.xib; sourceTree = "<group>"; };
 		1585FB25265A824D00C9858D /* HomeEventDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEventDataModel.swift; sourceTree = "<group>"; };
@@ -201,6 +213,7 @@
 				15644C6C26846E5B0049C3B9 /* LabelTVC.swift */,
 				154CDF29268351B100566FA7 /* MyTopTVC.swift */,
 				15644C6426846CEF0049C3B9 /* BackgroundXib.swift */,
+				15644C7A2685C51F0049C3B9 /* LoginOKViewCell */,
 				154CDF2D268351B400566FA7 /* MyTabXib */,
 			);
 			path = MyTabCell;
@@ -212,8 +225,27 @@
 				15644C6D26846E5B0049C3B9 /* LabelTVC.xib */,
 				154CDF2A268351B100566FA7 /* MyTopTVC.xib */,
 				15644C6526846CEF0049C3B9 /* BackgroundXib.xib */,
+				15644C7B2685C52B0049C3B9 /* LoginOKViewXib */,
 			);
 			path = MyTabXib;
+			sourceTree = "<group>";
+		};
+		15644C7A2685C51F0049C3B9 /* LoginOKViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				15644C74268485A10049C3B9 /* LoginOKTopTVC.swift */,
+				1515C06C26876B7400B4F620 /* MyBannerTVC.swift */,
+			);
+			path = LoginOKViewCell;
+			sourceTree = "<group>";
+		};
+		15644C7B2685C52B0049C3B9 /* LoginOKViewXib */ = {
+			isa = PBXGroup;
+			children = (
+				15644C75268485A10049C3B9 /* LoginOKTopTVC.xib */,
+				1515C06D26876B7400B4F620 /* MyBannerTVC.xib */,
+			);
+			path = LoginOKViewXib;
 			sourceTree = "<group>";
 		};
 		1585FB1D265A6EA600C9858D /* HomeTVC */ = {
@@ -410,6 +442,8 @@
 				15E4912C268337B300324ACA /* MyTabService */,
 				15E491292683373800324ACA /* MyTabDataModel */,
 				15E94F93265657A200154B73 /* MyTab.storyboard */,
+				15644C70268484E50049C3B9 /* LoginOKMyTab.storyboard */,
+				15644C78268485DF0049C3B9 /* LoginOKMyTabVC.swift */,
 				15E490F5267CB02200324ACA /* MyTabLogin.storyboard */,
 				15E490F7267CB43500324ACA /* MyTabLoginVC.swift */,
 				15E94F9D265657E400154B73 /* MyTabViewController.swift */,
@@ -573,6 +607,7 @@
 				15E94F862656505500154B73 /* HomeTab.storyboard in Resources */,
 				154CDF2C268351B100566FA7 /* MyTopTVC.xib in Resources */,
 				15E94F5926564E9700154B73 /* Assets.xcassets in Resources */,
+				15644C77268485A10049C3B9 /* LoginOKTopTVC.xib in Resources */,
 				15F8ACCD2678ABCF00E211A4 /* HomeNewProduct.storyboard in Resources */,
 				15E94F90265650C100154B73 /* SearchTab.storyboard in Resources */,
 				15E94F94265657A200154B73 /* MyTab.storyboard in Resources */,
@@ -587,6 +622,7 @@
 				1585FB2A265C185000C9858D /* HomeEventTVC.xib in Resources */,
 				15F8AC5F266D3BDA00E211A4 /* CategoryRepeatTVC.xib in Resources */,
 				15F8ACCF2678ABFA00E211A4 /* HomeBest.storyboard in Resources */,
+				15644C71268484E50049C3B9 /* LoginOKMyTab.storyboard in Resources */,
 				1585FB24265A7D1E00C9858D /* HomeEventCVC.xib in Resources */,
 				1585FB33265EEA2F00C9858D /* HomeProductCVC.xib in Resources */,
 				1585FBA92663FEC500C9858D /* HomeSaleTVC.xib in Resources */,
@@ -594,6 +630,7 @@
 				1585FBAD2663FF7D00C9858D /* HomeSaleCVC.xib in Resources */,
 				1585FB2F265EEA0D00C9858D /* HomeProductTVC.xib in Resources */,
 				15F8ACD32678AC9900E211A4 /* HomeBenefit.storyboard in Resources */,
+				1515C06F26876B7400B4F620 /* MyBannerTVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -727,9 +764,12 @@
 				1585FB32265EEA2F00C9858D /* HomeProductCVC.swift in Sources */,
 				1585FBA82663FEC500C9858D /* HomeSaleTVC.swift in Sources */,
 				1585FB29265C185000C9858D /* HomeEventTVC.swift in Sources */,
+				1515C06E26876B7400B4F620 /* MyBannerTVC.swift in Sources */,
+				15644C79268485DF0049C3B9 /* LoginOKMyTabVC.swift in Sources */,
 				15F8AC902673364300E211A4 /* CategoryExpyTVC.swift in Sources */,
 				15E490F8267CB43500324ACA /* MyTabLoginVC.swift in Sources */,
 				15F8AC5E266D3BDA00E211A4 /* CategoryRepeatTVC.swift in Sources */,
+				15644C76268485A10049C3B9 /* LoginOKTopTVC.swift in Sources */,
 				1585FB2E265EEA0D00C9858D /* HomeProductTVC.swift in Sources */,
 				1585FB35265FE18D00C9858D /* HomeProductDataModel.swift in Sources */,
 				1585FBAC2663FF7D00C9858D /* HomeSaleCVC.swift in Sources */,

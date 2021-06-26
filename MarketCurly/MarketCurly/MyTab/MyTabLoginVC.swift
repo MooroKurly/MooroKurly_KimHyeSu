@@ -34,8 +34,11 @@ class MyTabLoginVC: UIViewController {
     func loginAction(){
         LoginService.shared.login(id: self.idTextField.text!, pw: self.passwordTextField.text!){ result in
             switch result {
-            case .success:
+            case .success(let token) :
                 self.makeAlert(title: "알림", message: "로그인 성공")
+                print("토큰출력",token)
+                UserDefaults.standard.set(token, forKey: "token")
+                
             case .requestErr:
                 self.makeAlert(title: "알림", message: "로그인 실패")
             default:
