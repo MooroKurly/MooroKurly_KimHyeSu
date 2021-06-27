@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--마이-->
+        <!--마이컬리-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="MyTabMainVC" id="Y6W-OH-hqX" customClass="MyTabMainVC" customModule="MarketCurly" customModuleProvider="target" sceneMemberID="viewController">
@@ -36,7 +36,7 @@
                                     <constraint firstItem="tEl-DT-qVl" firstAttribute="leading" secondItem="Rqc-o2-U9W" secondAttribute="leading" constant="70" id="zwX-We-MxQ"/>
                                 </constraints>
                             </view>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I6V-Cn-Acl">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vIG-bw-aqy">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                             </containerView>
                         </subviews>
@@ -44,39 +44,39 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Rqc-o2-U9W" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="0Yr-Hs-ALr"/>
-                            <constraint firstItem="I6V-Cn-Acl" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="7AP-yw-ftE"/>
-                            <constraint firstItem="I6V-Cn-Acl" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="DS5-1q-Ufl"/>
-                            <constraint firstItem="I6V-Cn-Acl" firstAttribute="top" secondItem="Rqc-o2-U9W" secondAttribute="bottom" id="Hfx-ab-nr7"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="I6V-Cn-Acl" secondAttribute="trailing" id="iDm-St-ZHB"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="vIG-bw-aqy" secondAttribute="bottom" id="6ym-so-5qc"/>
+                            <constraint firstItem="vIG-bw-aqy" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="ITd-zc-a15"/>
+                            <constraint firstItem="vIG-bw-aqy" firstAttribute="top" secondItem="Rqc-o2-U9W" secondAttribute="bottom" id="f5Q-DM-IUc"/>
+                            <constraint firstAttribute="trailing" secondItem="vIG-bw-aqy" secondAttribute="trailing" id="mc2-e3-qtT"/>
                             <constraint firstAttribute="trailing" secondItem="Rqc-o2-U9W" secondAttribute="trailing" id="o7D-Es-Hxq"/>
                             <constraint firstItem="Rqc-o2-U9W" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="rly-BW-igt"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="마이" image="ic_my" selectedImage="ic_my-1" id="Q5B-HA-CrY"/>
+                    <tabBarItem key="tabBarItem" title="마이컬리" image="ic_my" selectedImage="ic_my-1" id="Q5B-HA-CrY"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="containerView" destination="I6V-Cn-Acl" id="blI-RT-uIt"/>
+                        <outlet property="containerView" destination="vIG-bw-aqy" id="1uR-3L-k4G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35" y="68"/>
+            <point key="canvasLocation" x="34.782608695652179" y="67.633928571428569"/>
         </scene>
         <!--MyTab-->
-        <scene sceneID="CGB-iR-Phx">
+        <scene sceneID="x22-fK-D73">
             <objects>
-                <viewControllerPlaceholder storyboardName="MyTab" id="5g8-Ad-BsS" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nv8-TJ-vVX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="MyTab" id="zJA-jl-8Uf" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gAv-IV-DQD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-336" y="515"/>
+            <point key="canvasLocation" x="-214" y="495"/>
         </scene>
         <!--LoginOKMyTab-->
-        <scene sceneID="CHi-kg-evU">
+        <scene sceneID="5fQ-WY-gaR">
             <objects>
-                <viewControllerPlaceholder storyboardName="LoginOKMyTab" id="p99-Ro-age" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oQS-XA-TFH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="LoginOKMyTab" id="t4e-gd-TxT" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GC6-sA-aDD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="444" y="477"/>
+            <point key="canvasLocation" x="350" y="442"/>
         </scene>
     </scenes>
     <resources>

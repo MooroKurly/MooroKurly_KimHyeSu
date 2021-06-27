@@ -16,35 +16,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Heu-UY-1GJ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="H5C-vq-dsf">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="H5C-vq-dsf">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    </tableView>
-                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstItem="H5C-vq-dsf" firstAttribute="leading" secondItem="Heu-UY-1GJ" secondAttribute="leading" id="4YK-nW-dsQ"/>
-                                    <constraint firstAttribute="trailing" secondItem="H5C-vq-dsf" secondAttribute="trailing" id="Ea1-nu-a1T"/>
-                                    <constraint firstItem="H5C-vq-dsf" firstAttribute="top" secondItem="Heu-UY-1GJ" secondAttribute="top" id="nON-th-Rpm"/>
-                                    <constraint firstAttribute="bottom" secondItem="H5C-vq-dsf" secondAttribute="bottom" id="nUq-R4-2zZ"/>
-                                </constraints>
-                            </view>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemGray4Color"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Heu-UY-1GJ" secondAttribute="trailing" id="7ct-Fw-nSi"/>
-                            <constraint firstItem="Heu-UY-1GJ" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="FJu-RH-11n"/>
-                            <constraint firstItem="Heu-UY-1GJ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="IQF-l2-gcr"/>
-                            <constraint firstAttribute="bottom" secondItem="Heu-UY-1GJ" secondAttribute="bottom" id="ubw-aE-bga"/>
+                            <constraint firstItem="H5C-vq-dsf" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="2za-8e-w7U"/>
+                            <constraint firstItem="H5C-vq-dsf" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="OfZ-X4-umE"/>
+                            <constraint firstItem="H5C-vq-dsf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="PwM-j6-Rx9"/>
+                            <constraint firstAttribute="bottom" secondItem="H5C-vq-dsf" secondAttribute="bottom" id="RSs-9Z-u4U"/>
                         </constraints>
                     </view>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="allView" destination="Heu-UY-1GJ" id="4C5-dv-SM5"/>
                         <outlet property="tableView" destination="H5C-vq-dsf" id="sNf-H7-ntZ"/>
                     </connections>
                 </viewController>

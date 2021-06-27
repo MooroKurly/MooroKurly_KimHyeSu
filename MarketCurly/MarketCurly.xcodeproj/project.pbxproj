@@ -448,11 +448,11 @@
 				15E4912C268337B300324ACA /* MyTabService */,
 				15E491292683373800324ACA /* MyTabDataModel */,
 				15E94F93265657A200154B73 /* MyTab.storyboard */,
+				15E94F9D265657E400154B73 /* MyTabViewController.swift */,
 				15644C70268484E50049C3B9 /* LoginOKMyTab.storyboard */,
 				15644C78268485DF0049C3B9 /* LoginOKMyTabVC.swift */,
 				15E490F5267CB02200324ACA /* MyTabLogin.storyboard */,
 				15E490F7267CB43500324ACA /* MyTabLoginVC.swift */,
-				15E94F9D265657E400154B73 /* MyTabViewController.swift */,
 				154CDF282683515100566FA7 /* MyTabCell */,
 			);
 			path = MyTab;

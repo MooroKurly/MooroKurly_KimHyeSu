@@ -17,27 +17,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Sub-m2-XrL">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Sub-m2-XrL" secondAttribute="bottom" id="Ai4-4n-d45"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Sub-m2-XrL" secondAttribute="trailing" id="dUX-y4-MqX"/>
-                            <constraint firstItem="Sub-m2-XrL" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="yxk-Av-rFL"/>
-                            <constraint firstItem="Sub-m2-XrL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="zNT-bW-yrB"/>
+                            <constraint firstItem="Sub-m2-XrL" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="5S6-R2-nZu"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Sub-m2-XrL" secondAttribute="bottom" id="ZgS-Wb-JAz"/>
+                            <constraint firstItem="Sub-m2-XrL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="nP5-Mu-ziP"/>
+                            <constraint firstItem="Sub-m2-XrL" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="zCd-xN-snk"/>
                         </constraints>
                     </view>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="allView" destination="5EZ-qb-Rvc" id="JE0-eb-XEW"/>
                         <outlet property="tableView" destination="Sub-m2-XrL" id="TK0-gT-eDq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35" y="104"/>
+            <point key="canvasLocation" x="34.782608695652179" y="103.79464285714285"/>
         </scene>
     </scenes>
     <resources>
