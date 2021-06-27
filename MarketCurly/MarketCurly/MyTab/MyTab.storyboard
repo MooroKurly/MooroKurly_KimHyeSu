@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--마이컬리-->
+        <!--My Tab View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="MyTabViewController" id="Y6W-OH-hqX" customClass="MyTabViewController" customModule="MarketCurly" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,45 +16,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k2M-dH-LHm">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Heu-UY-1GJ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="마이컬리" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKR-ye-hSf">
-                                        <rect key="frame" x="70" y="52" width="274" height="20"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
-                                        <color key="textColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="H5C-vq-dsf">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.43529411759999997" green="0.01176470588" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="lKR-ye-hSf" firstAttribute="top" secondItem="k2M-dH-LHm" secondAttribute="top" constant="52" id="OCk-qW-TLH"/>
-                                    <constraint firstAttribute="height" constant="88" id="XOn-hY-Y2y"/>
-                                    <constraint firstAttribute="trailing" secondItem="lKR-ye-hSf" secondAttribute="trailing" constant="70" id="fZS-Ke-Bqz"/>
-                                    <constraint firstAttribute="bottom" secondItem="lKR-ye-hSf" secondAttribute="bottom" constant="16" id="jtw-4G-4dA"/>
-                                    <constraint firstItem="lKR-ye-hSf" firstAttribute="leading" secondItem="k2M-dH-LHm" secondAttribute="leading" constant="70" id="y2n-5T-2JQ"/>
+                                    <constraint firstItem="H5C-vq-dsf" firstAttribute="leading" secondItem="Heu-UY-1GJ" secondAttribute="leading" id="4YK-nW-dsQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="H5C-vq-dsf" secondAttribute="trailing" id="Ea1-nu-a1T"/>
+                                    <constraint firstItem="H5C-vq-dsf" firstAttribute="top" secondItem="Heu-UY-1GJ" secondAttribute="top" id="nON-th-Rpm"/>
+                                    <constraint firstAttribute="bottom" secondItem="H5C-vq-dsf" secondAttribute="bottom" id="nUq-R4-2zZ"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="H5C-vq-dsf">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemGray4Color"/>
                         <constraints>
-                            <constraint firstItem="H5C-vq-dsf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="11P-Ee-gua"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="H5C-vq-dsf" secondAttribute="bottom" id="4ga-fP-ikr"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="H5C-vq-dsf" secondAttribute="trailing" id="QEv-aj-iKJ"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="k2M-dH-LHm" secondAttribute="trailing" id="Rbg-Kf-UTI"/>
-                            <constraint firstItem="k2M-dH-LHm" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="ano-Mx-4C8"/>
-                            <constraint firstItem="H5C-vq-dsf" firstAttribute="top" secondItem="k2M-dH-LHm" secondAttribute="bottom" id="tYF-Bs-V8w"/>
-                            <constraint firstItem="k2M-dH-LHm" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="xpD-ex-GKe"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Heu-UY-1GJ" secondAttribute="trailing" id="7ct-Fw-nSi"/>
+                            <constraint firstItem="Heu-UY-1GJ" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="FJu-RH-11n"/>
+                            <constraint firstItem="Heu-UY-1GJ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="IQF-l2-gcr"/>
+                            <constraint firstAttribute="bottom" secondItem="Heu-UY-1GJ" secondAttribute="bottom" id="ubw-aE-bga"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="마이컬리" image="ic_my" selectedImage="ic_my-1" id="SC8-fu-fsT"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="allView" destination="Heu-UY-1GJ" id="4C5-dv-SM5"/>
                         <outlet property="tableView" destination="H5C-vq-dsf" id="sNf-H7-ntZ"/>
                     </connections>
                 </viewController>
@@ -64,8 +54,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ic_my" width="23" height="21.5"/>
-        <image name="ic_my-1" width="23" height="21.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

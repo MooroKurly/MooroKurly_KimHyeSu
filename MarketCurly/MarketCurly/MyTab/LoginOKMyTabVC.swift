@@ -8,7 +8,10 @@
 import UIKit
 
 class LoginOKMyTabVC: UIViewController {
+    
+    public static let identifier = "LoginOKMyTabVC"
 
+    @IBOutlet var allView: UIView!
     @IBOutlet weak var tableView: UITableView!
     
     let labelList : [String] = ["적립금", "쿠폰", "친구초대",

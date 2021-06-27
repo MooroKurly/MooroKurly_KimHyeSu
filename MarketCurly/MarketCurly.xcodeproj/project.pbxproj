@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1515C06E26876B7400B4F620 /* MyBannerTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1515C06C26876B7400B4F620 /* MyBannerTVC.swift */; };
 		1515C06F26876B7400B4F620 /* MyBannerTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1515C06D26876B7400B4F620 /* MyBannerTVC.xib */; };
+		1515C0712688583700B4F620 /* MyTabMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1515C0702688583700B4F620 /* MyTabMain.storyboard */; };
+		1515C0732688588900B4F620 /* MyTabMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1515C0722688588900B4F620 /* MyTabMainVC.swift */; };
 		154CDF2B268351B100566FA7 /* MyTopTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154CDF29268351B100566FA7 /* MyTopTVC.swift */; };
 		154CDF2C268351B100566FA7 /* MyTopTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 154CDF2A268351B100566FA7 /* MyTopTVC.xib */; };
 		15644C6626846CEF0049C3B9 /* BackgroundXib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15644C6426846CEF0049C3B9 /* BackgroundXib.swift */; };
@@ -98,6 +100,8 @@
 /* Begin PBXFileReference section */
 		1515C06C26876B7400B4F620 /* MyBannerTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBannerTVC.swift; sourceTree = "<group>"; };
 		1515C06D26876B7400B4F620 /* MyBannerTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyBannerTVC.xib; sourceTree = "<group>"; };
+		1515C0702688583700B4F620 /* MyTabMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyTabMain.storyboard; sourceTree = "<group>"; };
+		1515C0722688588900B4F620 /* MyTabMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabMainVC.swift; sourceTree = "<group>"; };
 		154CDF29268351B100566FA7 /* MyTopTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTopTVC.swift; sourceTree = "<group>"; };
 		154CDF2A268351B100566FA7 /* MyTopTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTopTVC.xib; sourceTree = "<group>"; };
 		15644C6426846CEF0049C3B9 /* BackgroundXib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundXib.swift; sourceTree = "<group>"; };
@@ -439,6 +443,8 @@
 		15E94F842656503E00154B73 /* MyTab */ = {
 			isa = PBXGroup;
 			children = (
+				1515C0702688583700B4F620 /* MyTabMain.storyboard */,
+				1515C0722688588900B4F620 /* MyTabMainVC.swift */,
 				15E4912C268337B300324ACA /* MyTabService */,
 				15E491292683373800324ACA /* MyTabDataModel */,
 				15E94F93265657A200154B73 /* MyTab.storyboard */,
@@ -603,6 +609,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15E94F5C26564E9700154B73 /* LaunchScreen.storyboard in Resources */,
+				1515C0712688583700B4F620 /* MyTabMain.storyboard in Resources */,
 				15F8ACC52678836500E211A4 /* HomeCustomTab.storyboard in Resources */,
 				15E94F862656505500154B73 /* HomeTab.storyboard in Resources */,
 				154CDF2C268351B100566FA7 /* MyTopTVC.xib in Resources */,
@@ -773,6 +780,7 @@
 				1585FB2E265EEA0D00C9858D /* HomeProductTVC.swift in Sources */,
 				1585FB35265FE18D00C9858D /* HomeProductDataModel.swift in Sources */,
 				1585FBAC2663FF7D00C9858D /* HomeSaleCVC.swift in Sources */,
+				1515C0732688588900B4F620 /* MyTabMainVC.swift in Sources */,
 				15E94F9A265657D500154B73 /* RecommendTabViewController.swift in Sources */,
 				1585FB26265A824D00C9858D /* HomeEventDataModel.swift in Sources */,
 				15E94F5426564E9600154B73 /* ViewController.swift in Sources */,

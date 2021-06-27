@@ -8,7 +8,10 @@
 import UIKit
 
 class MyTabViewController: UIViewController {
+    
+    public static let identifier = "MyTabViewController"
 
+    @IBOutlet var allView: UIView!
     @IBOutlet weak var tableView: UITableView!
     
     let labelList : [String] = ["비회원 주문 조회", "알림설정", "컬리소개", "배송 안내", "공지사항", "자주하는 질문", "고객센터", "이용안내"]
