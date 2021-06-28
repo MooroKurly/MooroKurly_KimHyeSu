@@ -10,7 +10,7 @@ import UIKit
 class LoginOKMyTabVC: UIViewController {
     
     public static let identifier = "LoginOKMyTabVC"
-
+    
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -27,6 +27,9 @@ class LoginOKMyTabVC: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = UIColor(displayP3Red: 242/255, green: 242/255, blue: 242/255, alpha: 1)
+        
+        
+        
     
         
     }
@@ -52,7 +55,20 @@ class LoginOKMyTabVC: UIViewController {
 }
 
 extension LoginOKMyTabVC : UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case 28:
+            print("로그아웃 클릭")
+            
+            UserDefaults.standard.removeObject(forKey: "token")
+//            let sb = UIStoryboard(name: "MyTabMain", bundle: nil)
+//            guard let VC = sb.instantiateViewController(withIdentifier: MyTabMainVC.identifier) as? MyTabMainVC else { return }
+//           // VC.reloadInputViews()
+            
+        default:
+            print("..")
+        }
+    }
 }
 
 extension LoginOKMyTabVC : UITableViewDataSource {
